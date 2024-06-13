@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href = "../bootstrap.min.css">
+    <script src="../bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Định dạng placeholder */
+        .form-control::placeholder {
+            font-weight: bold; /* Làm cho chữ đậm */
+            color: #6c757d; /* Màu mặc định của Bootstrap cho placeholder */
+        }
+    </style>
+</head>
+<body>
+    <!--Dòng chữ chạy chạy-->
+    <!--Header trên cùng-->
+    <header>
+        <div class="container " style="background-color: aqua;" >
+            <div class="row">
+                <div class="col-md-1 p-3">
+                    <a href="../Trang chu/index.html">
+                        <img src="Image/logonho1.png" class="img-fluid logo" alt="logo" height="75px" width="75px">
+                    </a>
+                </div>
+                <div class="col-md-4 p-3">
+                    <div class="app-search">
+                        <form>
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Bạn đang quan tâm đến?..." style="font-size: 13px;border-radius: 15px;border-width: 2px;" list="list-timezone" id="input-datalist"onkeyup="checkEnter(event)"/>
+                            <datalist id="list-courses">
+                              <!--Thêm link các tour liên quan vào đây-->
+                              <option>TOEIC</option>
+                              <option>IELTS</option>
+                              <option>Mất gốc</option>
+                              <option>Giao tiếp</option>
+                              
+                          </datalist>
+                            <span class="mdi mdi-magnify search-icon"></span>
+                            <div class="input-group-append">
+                              <button class="btn btn-primary" type="submit" id="timkiem" style="font-size: 13px;font-weight: bold;" onclick="showAlert()">
+                                Tìm Kiếm
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="fs-1 text-danger">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <strong>Tư vấn hỗ trợ<br></strong> 
+                                    <strong class="text-danger">1900 1511</strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+                
+            </div> 
+            <div class="col-md-4 p-3">
+                <div class="row login">
+                    <div class="col-md-6 "><a href="../dangnhap/dangnhap.html">Đăng nhập</a></div>
+                    <div class="col-md-6">
+                        <i class="fa-solid fa-user"></i> <br>
+                        <em><strong>My Account</strong></em>
+                    </div>
+
+                </div>
+            </div></div>
+        </div>
+    </header>
+    
+    <!--Module 7 Đăng kí nhận tư vấn-->
+    <div class="container-fluid">
+        <div class="row" id="DKNTV">
+            <div id="left" class="col-lg-6 d-flex align-items-center justify-content-center ">
+                <div class="form-dkntv">
+                    <form id="Formdkntv">
+                        <h2>Đăng ký nhận tư vấn</h2>
+          
+                        <div class="form-group">
+                            <label for="Họ và tên">Họ và tên:</label>
+                            <input type="text" name="Họ và tên" id="Hoten"><br><br>
+                            <span style="color: white;" id="loi1"></span>
+                        </div>
+          
+                        <div class="form-group">
+                            <label for="số điện thoại">Số điện thoại:</label> 
+                            <input type="text" name="số điện thoại" id="sodienthoai"><br><br>
+                            <span style="color: white;" id="loi2"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Email">Email:</label> 
+                            <input type="text" name="Email" id="email"><br><br>
+                            <span style="color: white;" id="loi3"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="tinhthanh">Tỉnh thành đang sinh sống:</label> 
+                            <input type="text" name="tinhthanh" id="tinhthanh"><br><br>
+                            <span style="color: white;" id="loi4"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="thoigiantv">Thời gian có thể tư vấn :</label> 
+                            <input type="text" name="thoigiantv" id="thoigiantv"><br><br>
+                            <span style="color: white;" id="loi5"></span>
+                        </div>
+                        <button id="dangky">Đăng ký nhận tư vấn</button>
+                    </form> 
+                </div>
+            </div>
+            <div id="right" class="col-lg-6 d-flex align-items-center justify-content-center ">
+                <img src="/Trang chu/Image/ĐKNTV.png" id="right" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        function kiemTraDangKy() 
+        {
+            event.preventDefault();
+            let showError1 = document.getElementById("loi1");
+            let showError2 = document.getElementById("loi2");
+            let showError3 = document.getElementById("loi3");
+            let showError4 = document.getElementById("loi4");
+            let showError5 = document.getElementById("loi5");
+            var name = document.getElementById("Hoten").value;
+            var number = document.getElementById("sodienthoai").value;
+            var email =document.getElementById("email").value;
+            var tinh =document.getElementById("tinhthanh").value;
+            var time = document.getElementById("thoigiantv").value;
+            var passwordRegex = /^[A-Za-z0-9]+$/;
+            if (name == "") {
+                showError1.innerHTML="Bạn chưa nhập họ và tên.";
+                return false;
+            } 
+            else
+            {
+            showError1.innerHTML="";
+            }
+            if (number == "") {
+                showError2.innerHTML="Bạn chưa nhập số điện thoại.";
+                return false;
+            } 
+            else
+            {
+            showError2.innerHTML="";
+            }
+            if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)|| email=="") {
+                showError3.innerHTML="Bạn chưa nhập email.";
+                return false;
+            } 
+            else{
+            showError3.innerHTML="";
+            }
+            
+            if(tinh == "")
+            {
+                showError4.innerHTML="Bạn chưa nhập tỉnh thành bạn đang sinh sống.";
+                return false;
+            }
+            else {
+                showError4.innerHTML="";
+            }
+            if(time == "")
+            {
+                showError5.innerHTML="Bạn chưa nhập thời gian có thể tư vấn.";
+                return false;
+            }
+            else {
+                showError5.innerHTML="";
+            }
+            alert("Đăng Ký thành công.");
+            return false;
+
+        }
+        window.onload = function() 
+        {
+            
+            document.getElementById("dangky").addEventListener("click", function() {
+                kiemTraDangKy();
+            });    
+        };
+    </script>
+   
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DangNhap</title>
+  <link rel="stylesheet" href="dangnhap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="logo.png">
+  <script src="../bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href = "/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-lg-6 d-flex align-items-center justify-content-center " id="left">
+        <h1>WELCOME TO ENGLISH HOUSE</h1>
+        <img src="Thiết kế chưa có tên.png" alt="">
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center" id="right">
+          <div class="form-dn">
+            <form id="Formdn">
+              <h2>Đăng nhập</h2>
+              <hr style="border: 0;height: 2px;background-color:white;">
+
+              <div class="form-group">
+                <label for="taikhoan">Email:</label>
+                <input type="text" name="taikhoan" id="taikhoan"><br><br>
+                <span style="color: white;" id="loi1"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="matkhau">Mật khẩu:</label> 
+                <input type="text" name="matkhau" id="matkhau"><br><br>
+                <span style="color: white;" id="loi2"></span>
+              </div>
+              <hr style="border: 0;height: 2px;background-color:white;">
+              <div id="dong1">
+                <label for="ghinho"> <input type="checkbox" name="ghinho" id="ghinho">Ghi nhớ</label>
+                <a href="#quenmatkhau" id="quenmatkhau">Quên mật khẩu</a><br><br>
+              </div>
+              <button id="dangnhap">Đăng nhập</button>
+              <p>Bạn có tài khoản chưa ? <a href="dangky.html">Đăng ký ngay</a></p> 
+              <div id="dong2">
+                <p>Quay lại trang chủ <a href="../Trang chu/index.html"><i class="fas fa-arrow-left"></i></a></p>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function kiemTraDangNhap() {
+    
+    event.preventDefault();
+    let showError1 = document.getElementById("loi1");
+    let showError2 = document.getElementById("loi2");
+    var username = document.getElementById("taikhoan").value;
+    var password = document.getElementById("matkhau").value;
+    var passwordRegex = /^[A-Za-z0-9]+$/;
+
+    if (!username.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+        showError1.innerHTML="Tài khoản không đúng định dạng email";
+        return false;
+    } 
+    else{
+      showError1.innerHTML="";
+    }
+    if (password.length < 6 || !password.match(passwordRegex)) {
+        showError2.innerHTML="Mật khẩu phải dài ít nhất 6 ký tự và chỉ chứa chữ cái và số, không chứa kí tự đặc biệt";
+        return false;
+    } 
+    else
+    {
+      
+      showError2.innerHTML="";
+    }
+    alert("Đăng nhập thành công.");
+      window.location.href = "";
+      return false;
+}
+
+function quenmatkhau() {
+    var username = document.getElementById("taikhoan").value;
+    if (username.length == 0) {
+        alert("Xin hãy nhập tài khoản email");
+        return false;
+    } else {
+        alert("Mật khẩu đã được gửi qua email của bạn");
+    }
+}
+
+window.onload = function() {
+    // Lắng nghe sự kiện click trên nút Đăng nhập
+    document.getElementById("dangnhap").addEventListener("click", function() {
+        kiemTraDangNhap(); // Gọi hàm kiemTraDangNhap khi nút được click
+    });
+
+    // Lắng nghe sự kiện click trên nút Quên mật khẩu
+    document.getElementById("quenmatkhau").addEventListener("click", function() {
+        quenmatkhau(); // Gọi hàm quenmatkhau khi nút được click
+    });
+
+    // Lắng nghe sự kiện click trên checkbox Ghi nhớ
+    document.getElementById("ghinho").addEventListener("click", function() {
+        if (this.checked) {
+          alert("Đã ghi nhớ tài khoản mật khẩu",)
+        
+            
+        } else {
+            alert("Ghi nhớ đã bị tắt");
+        }
+    });
+};
+  </script>
+</body>
+</html>

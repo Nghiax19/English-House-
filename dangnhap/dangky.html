@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DangKy</title>
+  <link rel="stylesheet" href="dangky.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href = "/bootstrap.min.css">
+  <script src="../bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="left" class="col-lg-6 d-flex align-items-center justify-content-center ">
+         <h1>WELCOME TO ENGLISH HOUSE</h1>
+        <img src="Thiết kế chưa có tên.png" alt="">
+      </div>
+      <div id="right" class="col-lg-6 d-flex align-items-center justify-content-center ">
+        <div class="form-dk">
+         <form id="Formdk">
+            <h2>Đăng Ký</h2>
+            <hr style="border: 0;height: 2px;background-color:white;">
+
+            <div class="form-group">
+              <label for="taikhoan">Email:</label>
+              <input type="text" name="taikhoan" id="taikhoan"><br><br>
+              <span style="color: white;" id="loi1"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="matkhau">Mật khẩu:</label> 
+              <input type="text" name="matkhau" id="matkhau"><br><br>
+              <span style="color: white;" id="loi2"></span>
+            </div>
+            <div class="form-group">
+              <label for="xacnhan">Xác nhận lại mật khẩu:</label> 
+              <input type="text" name="xacnhan" id="xacnhan"><br><br>
+              <span style="color: white;" id="loi3"></span>
+            </div>
+            <hr style="border: 0;height: 2px;background-color:white;">
+            <button id="dangky">Đăng ký</button>
+            <div class="dong1">
+              <p>Quay lại trang chủ <a href="../Trang chu/index.html"><i class="fas fa-arrow-left"></i></a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function kiemTraDangKy() {
+    
+    event.preventDefault();
+    let showError1 = document.getElementById("loi1");
+    let showError2 = document.getElementById("loi2");
+    let showError3 = document.getElementById("loi3");
+    var username = document.getElementById("taikhoan").value;
+    var password = document.getElementById("matkhau").value;
+    var passwordRegex = /^[A-Za-z0-9]+$/;
+
+    if (!username.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+        showError1.innerHTML="Tài khoản không đúng định dạng email";
+        return false;
+    } 
+    else{
+      showError1.innerHTML="";
+    }
+    if (password.length < 6 || !password.match(passwordRegex)) {
+        showError2.innerHTML="Mật khẩu phải dài ít nhất 6 ký tự và chỉ chứa chữ cái và số, không chứa kí tự đặc biệt";
+        return false;
+    } 
+    else
+    {
+      
+      showError2.innerHTML="";
+    }
+    if(password != document.getElementById("xacnhan").value)
+    {
+        showError3.innerHTML="Mật khẩu vừa nhập không đúng.";
+        return false;
+    }
+    else {
+        showError3.innerHTML="";
+    }
+    alert("Đăng Ký thành công.");
+    window.location.href = "";
+    return false;
+}
+window.onload = function() {
+    
+    document.getElementById("dangky").addEventListener("click", function() {
+        kiemTraDangKy();
+    });    
+};
+  </script>
+  <!-- XONG BÀI hihi -->
+</body>
+</html>

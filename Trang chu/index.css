@@ -1,0 +1,134 @@
+
+ div div#DKNTV {
+    background: red;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+div div#DKNTV div#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+div div#DKNTV div#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div div#DKNTV div#right img#right{
+
+    width:100vh;
+     height:100vh;
+}
+
+div div#DKNTV div#left div.form-dkntv {
+    width: 50vh;
+    height: 86vh;
+    padding: 2vh;
+    border-radius: 1vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:red;
+    margin: 2vh;
+    border: 0.2vw solid white;
+}
+
+div div#DKNTV div#left div.form-dkntv h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 4vh;
+}
+
+div div#DKNTV div#left div.form-dkntv div.form-group {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+div div#DKNTV div#left div.form-dkntv div.form-group label {
+    display: block;
+    font-size: 1.7vh;
+    margin-bottom: 1vh;
+}
+
+div div#DKNTV div#left div.form-dkntv div.form-group input[type="text"] {
+    width: 100%;
+    padding: 1vh;
+    border-radius: 1vh;
+    border: 1px solid black;
+}
+div div#DKNTV div#left div.form-dkntv div.form-group span{
+    margin-bottom: 1vh;
+}
+div div#DKNTV div#left div.form-dkntv button#dangky {
+    width: 100%;
+    height: 4vh;
+    border-radius: 4vh;
+    background: #fff;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    font-size: 2.5vh;
+    color: #ff0000;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+} 
+
+.input-group-text  {
+    border: none;
+    
+    background-color:none;
+    box-shadow: none;
+    /* Thêm các thuộc tính CSS khác nếu cần */
+  }
+  .login a{
+    text-decoration: none;
+    display: block; /* Ensure the link takes full width and height */
+            padding: 10px 20px; /* Add padding to increase clickable area */
+            background-color: #17a2b8; /* Set background color */
+            color: white; /* Set text color */
+            border-radius: 10px; /* Round the corners */
+            text-align: center;
+}
+.login .col-md-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the div takes full height */
+}
+
+.form-control{
+    
+        height: 30px; /* giữ nguyên chiều rộng của cột chứa thanh tìm kiếm */
+    
+}
+.logo{
+    border-radius: 50%; /* Làm cho hình ảnh thành hình tròn */
+    object-fit: cover; /* Đảm bảo hình ảnh vừa khít với khung hình tròn */
+    width: 75px; /* Đảm bảo kích thước hình ảnh theo yêu cầu */
+    height: 75px;
+}
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-15deg); }
+    40% { transform: rotate(15deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.fs-1 {
+    display: inline-block;
+    animation: shake 0.5s infinite;
+}
