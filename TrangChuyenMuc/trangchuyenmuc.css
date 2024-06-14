@@ -41,3 +41,15 @@ body {
     background-color: #ff6c67;
     border-color: #ff6c67;
 }
+.sidebar #image{
+    height: 65%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 3px solid white;
+}
+.sidebar #image img{
+    
+    width: 100%;
+    min-height: 100%;
+    
+}
