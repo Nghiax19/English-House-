@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    
+}
+.container {
+    background-color:#ff0303; /* Màu nền đỏ */}
+.container #left
+{
+    position: -webkit-sticky; /* Cho Safari */
+    position: sticky;
+    top: 0;
+    height: 100vh; /* Chiều cao tối đa cho aside là chiều cao của màn hình */
+    overflow-y: auto;
+}
+
+.sidebar .list-group-item.active {
+    background-color: #ff6c67;
+    border-color: #ff6c67;
+    margin: 0px;
+    margin-top: 20px;
+    
+}
+.sidebar .list-group-item {
+    border: 1px solid #ff6c67;
+}
+.main-content h2
+{ color:white ;
+    margin-top: 10px;}
+.main-content .card {
+    margin-bottom: 20px;
+    border: 3px solid #ff6c67;
+}
+.main-content .card-title {
+    color: #d9534f;
+}
+.main-content .btn-primary {
+    background-color: #ff6c67;
+    border-color: #ff6c67;
+}
+.main-content .btn-primary:hover {
+    background-color: #ff6c67;
+    border-color: #ff6c67;
+}
