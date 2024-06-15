@@ -22,20 +22,20 @@
     <!--Dòng chữ chạy chạy-->
     <!--Header trên cùng-->
     <header>
-        <div class="container " style="background-color: aqua;" >
-            <div class="row">
-                <div class="col-md-1 p-3">
+        <div class="container " style="background-color: darkgray;max-width: 1200px;margin: 0 auto;" >
+            <div class="row" style="display: flex;align-items: center;justify-content: space-between;">
+                <div class="col-md-1 p-3" style="display: flex;align-items: center;">
                     <a href="../Trang chu/index.html">
-                        <img src="Image/logonho1.png" class="img-fluid logo" alt="logo" height="75px" width="75px">
+                        <img src="Image/logopng.png" class="img-fluid logo" alt="logo" height="46ox" width="46px">
                     </a>
                 </div>
-                <div class="col-md-4 p-3">
+                <div class="col-md-4 p-3" style="display: flex;align-items: center;">
                     <div class="app-search">
                         <form>
-                          <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Bạn đang quan tâm đến?..." style="font-size: 13px;border-radius: 15px;border-width: 2px;" list="list-timezone" id="input-datalist"onkeyup="checkEnter(event)"/>
+                          <div class="input-group" style="display: flex;align-items: center;">
+                            <input type="text" class="form-control" placeholder="Bạn đang quan tâm đến?..." style="font-size: 13px;border-radius: 15px;border-width: 2px;" list="list-timezone" id="input-datalist"/>
                             <datalist id="list-courses">
-                              <!--Thêm link các tour liên quan vào đây-->
+                              
                               <option>TOEIC</option>
                               <option>IELTS</option>
                               <option>Mất gốc</option>
@@ -52,7 +52,7 @@
                         </form>
                       </div>
                 </div>
-                <div class="col-md-3 p-3">
+                <div class="col-md-3 p-3" style="display: flex;align-items: center;">
                     <div class="row">
                         
                         <div class="col-md-12">
@@ -72,9 +72,9 @@
                 </div>
                 
             </div> 
-            <div class="col-md-4 p-3">
+            <div class="col-md-4 p-3" style="display: flex;align-items: center;">
                 <div class="row login">
-                    <div class="col-md-6 "><a href="../dangnhap/dangnhap.html">Đăng nhập</a></div>
+                    <div class="col-md-6 "><a href="../dangnhap/dangnhap.html">Log In</a></div>
                     <div class="col-md-6">
                         <i class="fa-solid fa-user"></i> <br>
                         <em><strong>My Account</strong></em>
@@ -84,9 +84,27 @@
             </div></div>
         </div>
     </header>
-    
+    <menu>
+        <ul id="nav">
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Về chúng tôi</a></li>
+            <li>
+                <a href="../TrangChuyenMuc/trangchuyenmuc.html">Khoá học</a>
+                <ul class="subnav">
+                    <li><a href="">Tiếng Anh Giao Tiếp</a></li>
+                    <li><a href="">IELTS</a></li>
+                    <li><a href="">TOEIC</a></li>
+                    <li><a href="">Tiếng Anh Thiếu Nhi</a></li>
+                    <li><a href="">Tiếng Anh Mất Gốc</a></li>
+                </ul>
+            </li>
+            <li><a href="">Lịch khai giảng</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Hỗ trợ</a></li>
+        </ul>
+    </menu>
     <!--Module 7 Đăng kí nhận tư vấn-->
-    <div class="container-fluid">
+    <div class="container-fluid pt-3" >
         <div class="row" id="DKNTV">
             <div id="left" class="col-lg-6 d-flex align-items-center justify-content-center ">
                 <div class="form-dkntv">
