@@ -21,55 +21,23 @@ body{
 menu{
     height: 46px;
     background-color: wheat;
-}
-/*#nav, .subnav{
-    list-style-type: none;
-
-}
-#nav li{
-    display: inline-block;
-    position: relative;
-}
-#nav .subnav{
-    //display: none;
-    position: absolute;
-    background-color: white;
-}
-#nav .subnav li {
-    display: block;
-}
-#nav .subnav a{
-    color: black;
+    
+    left: 0;
+    right: 0;
 }
 
-#nav > li > a{
-    color: black;
-}
-#nav li a{
-    text-decoration: none;
-    line-height:46px ;
-    padding: 0 24px;
-    display: block;
-}
-#nav > li:hover > a,
-#nav.subnav li:hover a {
-    color: red !important;
-    background-color: white !important ;
-
-}
-#nav li:hover > .subnav {
-    display: block;
-}*/
 /* Định dạng cho menu */
 #nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    
+    display: flex;
+   
 }
 #nav li {
     position: relative;
     display: inline-block;
+    
 }
 #nav a {
     display: block;
@@ -82,6 +50,7 @@ menu{
     line-height:46px ;
     padding: 0 24px;
     display: block;
+    text-align: center;
 }
 /* Định dạng cho subnav */
 .subnav {
@@ -94,6 +63,8 @@ menu{
     padding: 0;
     margin: 0;
     min-width: 200px;
+   
+    
 }
 .subnav li {
     display: block;
@@ -104,15 +75,18 @@ menu{
     padding: 10px;
     color: white;
     text-decoration: none;
+    border: 1px solid #ddd;
 }
 /* Đổi màu nền khi hover vào các mục chính */
 #nav li:hover > a {
     background-color: white;
-    color: red; /* Đổi màu chữ sang màu đen hoặc màu đậm để dễ đọc trên nền trắng */
+    color: red; 
 }
 /* Hiển thị subnav khi hover vào li cha */
 #nav li:hover > .subnav {
     display: block;
+    width: 100%;
+    left: 0;
 }
 /* Đổi màu chữ khi hover vào các li con */
 .subnav li:hover > a {
@@ -124,6 +98,22 @@ a {
 }
 .app-search button:hover {
     background-color: #0056b3;
+}
+#nav .navicon{
+    font-size: 10px;
+}
+menu .search-button{
+    float: right;
+    padding: 0px 21px;
+    
+}
+menu .searchicon{
+    font-size: 20px;
+    line-height: 46px;
+}
+menu .search-button:hover{
+    background-color: white;
+    cursor: pointer;
 }
  div div#DKNTV {
     background: red;
