@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 .slider-wrapper .image-list{
     display: grid;
     gap: 18px;
