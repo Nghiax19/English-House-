@@ -19,7 +19,18 @@
             font-weight: bold; /* Làm cho chữ đậm */
             color: #6c757d; /* Màu mặc định của Bootstrap cho placeholder */
         }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(245, 235, 235, 0.9);
+        }
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
     </style>
 </head>
 <body>
@@ -37,7 +48,7 @@
                     <i class="ti-search"></i>
                 </button>
             </div>
-            <div class="menu">
+            <div class="menu1">
                 <a href="#DKNTV" class="contacticon">
                         <i class="fa-solid fa-phone-volume">&nbsp&nbsp&nbsp&nbsp1900 1511</i>
                 </a>
@@ -47,9 +58,11 @@
         </div>
     </header>
 
-    <menu>
+    
+    <div class="menu container-fluid header " id="myHeader">
         <!--Bắt đầu menu-->
-        <div class="container " >
+    
+        <div class="container mt-0 " >
         <ul id="nav">
             <li><a href="">Trang chủ</a></li>
             <li><a href="">Về chúng tôi</a></li>
@@ -71,8 +84,11 @@
             <li><a href="">Tin tức</a></li>
             <li><a href="">Hỗ trợ</a></li>
         </ul>
-    </menu>
+    
+    </div>
+    </div>
 
+    <!--breadcrumb-->
     <!--Slider dùng carousel trong bootstrap 5-->
     <div class="container-fluid">
         <!-- Carousel -->
@@ -123,12 +139,12 @@
                         <div class="circle big-circle">
                             <img src="Image/anhgt.png" alt="Big Image" style="border-radius: 50%;"  >
                         </div>
-                        </div>
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
     </div>
+    
     
     <!--Module gthieu khoá học hot-->
     <h3 class="mt-3 mb-4" style="color: red;font-weight: bold;">
@@ -242,14 +258,17 @@
             </div>
         </div>
     </div>    
-    <!--Module 7 Đăng kí nhận tư vấn-->
-    <div class="container-fluid pt-3" >
-        <div class="row" id="DKNTV">
-            <div id="left" class="col-lg-6 d-flex align-items-center justify-content-center ">
-                <div class="form-dkntv">
-                    <form id="Formdkntv">
-                        <h2>Đăng ký nhận tư vấn</h2>
-          
+    <!--Module Đăng kí nhận tư vấn-->
+    <h3 class="mt-3 mb-4" style="color: red;font-weight: bold;">
+        ĐĂNG KÝ NHẬN TƯ VẤN
+        <span class="material-symbols-outlined" style="font-weight: bold;">
+            phone_in_talk
+            </span>
+    </h3>
+    <div class="container formdki" style="display: flex;justify-content: center;align-items: center;">
+            <div class="row ">
+                <div class="col-sm-6 ">
+                    <form id="Formdkntv" class="card">
                         <div class="form-group">
                             <label for="Họ và tên">Họ và tên:</label>
                             <input type="text" name="Họ và tên" id="Hoten"><br><br>
@@ -268,26 +287,73 @@
                             <span style="color: white;" id="loi3"></span>
                         </div>
                         <div class="form-group">
-                            <label for="tinhthanh">Tỉnh thành đang sinh sống:</label> 
-                            <input type="text" name="tinhthanh" id="tinhthanh"><br><br>
-                            <span style="color: white;" id="loi4"></span>
-                        </div>
-                        <div class="form-group">
                             <label for="thoigiantv">Thời gian có thể tư vấn :</label> 
                             <input type="text" name="thoigiantv" id="thoigiantv"><br><br>
                             <span style="color: white;" id="loi5"></span>
                         </div>
-                        <button id="dangky">Đăng ký nhận tư vấn</button>
+                        <button id="dangky">
+                            Đăng ký nhận tư vấn
+                        </button>
                     </form> 
                 </div>
+                <div class="col-sm-6 ">
+                    <div class="imgdktv">
+                        <img src="Image/ĐKTV.png" alt="Big Image"   >
+                    </div>
+                </div>
             </div>
-            <div id="right" class="col-lg-6 d-flex align-items-center justify-content-center ">
-                <img src="/Trang chu/Image/ĐKNTV.png" id="right" alt="">
-            </div>
-        </div>
     </div>
     <!--Footer-->
-    
+    <footer class="bg-dark text-white py-5 mt-3">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-3 col-content d-flex flex-column align-items-center"
+            >
+              <a href="#" class="navbar-brand nav-title mb-2" style="margin: 5px 0">
+                    <img src="Image/logopng.png" alt="" height="46px" width="46px">
+              </a>
+              <p><strong>Địa chỉ</strong> : <a href="https://maps.app.goo.gl/pBgr9uYhXFZHzHEr8" target="_blank"> Số 12 Chùa Bộc, TP.Hà Nội</a></p>
+              <p><strong>Số điện thoại</strong> : <a href="tel:01234567890"></a>+84 234567890</p>
+              <p><strong>Email</strong> : <a href="mailto:enghouse@contact.com" type="Email">enghouse@contact.com</a>
+                <h2 style="font-size: 15px; color: #FFF  ;">CHỨNG NHẬN</h2>
+                <a href="https://itde.hvnh.edu.vn/" target="_blank"><img src="Image/logomis.jpg" alt="logo mishvnh"></a>
+            </div>
+  
+            <div class="col-md-3 col-content">
+              <h5>Hỗ Trợ Khách Hàng</h5>
+              <p><a href="#">Tư vấn khoá học</a></p>
+              <p><a href="#">Hỏi đáp</a></p>
+              <h5 style="font-size: 15px; color: #FFCC33  ;">CHẤP NHẬN THANH TOÁN</h5>
+            <img src="Image/pay.png">
+            <h5 style="font-size: 15px; color: #FFCC33;" class="mt-2">ỨNG DỤNG DI ĐỘNG</h5>
+            <img src="Image/app.png">
+            </div>
+  
+            <div class="col-md-3 col-content">
+              <h5>Chính Sách</h5>
+              <p><a href="#">Điều khoản sử dụng</a></p>
+              <p><a href="#">Chính sách bảo mật</a></p>
+              <p><a href="#">Hỗ trợ mua khoá học</a></p>
+              <p><a href="#">Chính sách thanh toán</a></p>
+            </div>
+  
+            <div class="col-md-3 col-content">
+              <h5>Giờ Hoạt Động</h5>
+              <p>Thứ 2 - Thứ 6: 8:00 AM - 6:00 PM</p>
+              <p>Thứ 7: 9:00 AM - 4:00 PM</p>
+              <p>Chủ Nhật: Nghỉ</p>
+            </div>
+          </div>
+  
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <p class="copyright">&copy; 2024 - EngHouse - Design by Group 11 - Học phần: Thiết Kế Web - HVNH.</p>
+              <p class="copyright">&copy; Chúc bạn có một trải nghiệm vui vẻ.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     <script>
         function kiemTraDangKy() 
         {
@@ -295,12 +361,10 @@
             let showError1 = document.getElementById("loi1");
             let showError2 = document.getElementById("loi2");
             let showError3 = document.getElementById("loi3");
-            let showError4 = document.getElementById("loi4");
             let showError5 = document.getElementById("loi5");
             var name = document.getElementById("Hoten").value;
             var number = document.getElementById("sodienthoai").value;
             var email =document.getElementById("email").value;
-            var tinh =document.getElementById("tinhthanh").value;
             var time = document.getElementById("thoigiantv").value;
             var passwordRegex = /^[A-Za-z0-9]+$/;
             if (name == "") {
@@ -326,15 +390,6 @@
             else{
             showError3.innerHTML="";
             }
-            
-            if(tinh == "")
-            {
-                showError4.innerHTML="Bạn chưa nhập tỉnh thành bạn đang sinh sống.";
-                return false;
-            }
-            else {
-                showError4.innerHTML="";
-            }
             if(time == "")
             {
                 showError5.innerHTML="Bạn chưa nhập thời gian có thể tư vấn.";
@@ -343,9 +398,8 @@
             else {
                 showError5.innerHTML="";
             }
-            alert("Đăng Ký thành công.");
+            alert("Chúng tôi sẽ liên hệ với bạn sớm nhất.");
             return false;
-
         }
         window.onload = function() 
         {
@@ -355,7 +409,25 @@
             });    
         };
     </script>
-   
+   <script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+   </script>
     
 </body>
 </html>

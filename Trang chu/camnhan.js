@@ -55,3 +55,4 @@ const updateScrollThumbPosition = () => {
     });
 }
 window.addEventListener("load",initSlider);
+
