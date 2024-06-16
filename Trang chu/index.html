@@ -368,7 +368,7 @@
             var time = document.getElementById("thoigiantv").value;
             var passwordRegex = /^[A-Za-z0-9]+$/;
             if (name == "") {
-                showError1.innerHTML="Bạn chưa nhập họ và tên.";
+                alert("Bạn chưa nhập họ và tên.");
                 return false;
             } 
             else
@@ -376,7 +376,7 @@
             showError1.innerHTML="";
             }
             if (number == "") {
-                showError2.innerHTML="Bạn chưa nhập số điện thoại.";
+                alert("Bạn chưa nhập số điện thoại.");
                 return false;
             } 
             else
@@ -384,7 +384,7 @@
             showError2.innerHTML="";
             }
             if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)|| email=="") {
-                showError3.innerHTML="Bạn chưa nhập email.";
+                alert("Bạn chưa nhập email.");
                 return false;
             } 
             else{
@@ -392,7 +392,7 @@
             }
             if(time == "")
             {
-                showError5.innerHTML="Bạn chưa nhập thời gian có thể tư vấn.";
+                alert("Bạn chưa nhập thời gian có thể tư vấn.");
                 return false;
             }
             else {
