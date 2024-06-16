@@ -307,3 +307,72 @@ header .container {
     color: red;
     font-weight: bolder;
 }
+.KHH .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.KHH .row {
+    display: flex;
+    
+}
+.KHH .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+}
+.KHH .card img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.KHH .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.KHH .card-body p {
+    flex-grow: 1;
+}
+
+.KHH .card-link {
+    align-self: flex-start;
+    margin-top: auto;
+}
+.KHH .card {
+    border: 2px solid rgb(244, 61, 61); 
+    
+}
+.KHH .card-link {
+    background-color: rgb(229, 37, 37); 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.KHH .card-link:hover {
+    background-color: #ccc; 
+    color: black; 
+}
+h3{
+    text-align: center !important;
+}
+.ti-gift {
+    color: red;
+    font-weight: bolder;
+}
+@keyframes shake3 {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-5deg); }
+    50% { transform: translateX(5px) rotate(5deg); }
+    75% { transform: translateX(-5px) rotate(-5deg); }
+    100% { transform: translateX(0); }
+}
+h3{
+    animation: shake3 0.5s infinite;
+}
