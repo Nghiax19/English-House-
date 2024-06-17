@@ -1,0 +1,473 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #e0f7fa;
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #d32f2f;
+    margin-bottom: 30px;
+}
+
+.hero ul {
+    font-size: 1.25rem;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.hero ul li {
+    margin-bottom: 10px;
+}
+
+.hero .btn {
+    font-size: 1.5rem;
+}
+
+.hero-image {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transform: translate(50%, 50%);
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+.btn-register {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+    background-image: url('background-pattern.png'); /* Giả định hình nền */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.text h1 {
+    font-size: 2.5rem; /* Kích thước lớn hơn */
+    color: #d32f2f; /* Màu đỏ đậm */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
+    margin: 20px 0; /* Khoảng cách trên dưới */
+    font-family: 'Roboto', sans-serif; /* Font đẹp */
+    border-bottom: 2px solid #d32f2f; /* Đường kẻ bên dưới */
+    display: inline-block; /* Để đường kẻ dưới không chạy hết chiều rộng */
+    padding-bottom: 10px; /* Khoảng cách giữa chữ và đường kẻ */
+}
+
+.icons {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon-box {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.icon-box p {
+    margin: 0;
+}
+/* Phần mới thêm */
+.future-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.future-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d32f2f;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.future-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.future-item {
+    width: 45%;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.future-item:hover {
+    transform: translateY(-10px);
+}
+
+.future-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.future-item h3 {
+    font-size: 1.5rem;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.future-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.reasons-section {
+    background-color: #e0f7fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.reasons-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #d32f2f;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.reasons-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.reason-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%;
+}
+
+.reason-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reason-icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.reason-text h3 {
+    font-size: 1.75rem;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.reason-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.focus-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.focus-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #d32f2f;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.focus-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.focus-item {
+    width: 45%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.focus-item:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+.focus-item h3 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.focus-text {
+    display: none;
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+}
+
+.focus-text {
+    display: none;
+    animation: fadeIn 2s ease forwards; /*Chữ dần hiện lên*/
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.focus-text.active {
+    display: block;
+}
+
+.lotrinh {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    flex: 1;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.icon {
+    font-size: 24px;
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #d32f2f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.item::before {
+    content: "\2713";
+    color: green !important;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.dangky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Đặt phần tử cha làm khung chứa */
+}
+
+.hinhnen {
+    background: url('Image/class.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    width: 100%;
+    position: absolute; /* Sử dụng absolute để nằm trong phần tử cha */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Đặt z-index nhỏ hơn phần tử chính (form đăng ký) */
+}
+
+
+.form-dangky {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+
+/* Popup CSS */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
