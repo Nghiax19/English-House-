@@ -27,9 +27,14 @@ body {
     padding: 20px;
     border-top: 6px solid #d9534f;
     overflow-y: auto;
-    height: 1903px;
+    height: 1913px;
     border-bottom: 6px solid #d9534f ;
     
+}
+.highlight{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
 }
 .col-sm {
     border: 5px solid #d9534f;
@@ -79,4 +84,30 @@ body {
     height: 300px;
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+
+.col-content a {
+    text-decoration: none;
+    color: inherit; /* Ensures the links have the same color as surrounding text */
+}
+
+.col-content a:hover {
+    color: #FFCC33; /* Optional: Add hover effect for better UX */
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.col-content {
+    flex: 1;
+    margin-bottom: 20px; /* Adjust this as needed */
+    padding: 15px;
+    box-sizing: border-box;
+}
+.col-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

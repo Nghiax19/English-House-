@@ -3,7 +3,8 @@ body {
     
 }
 .container-fluid {
-    background-color:#ff0303; /* Màu nền đỏ */}
+    background-color:#ff0303; /* Màu nền đỏ */
+}
 .container #left
 {
     position: -webkit-sticky; 
@@ -55,4 +56,29 @@ body {
     width: 100%;
     min-height: 100%;
     border-radius: 20px;
+}
+
+.col-content a {
+    text-decoration: none;
+    color: inherit; /* Ensures the links have the same color as surrounding text */
+}
+
+.col-content a:hover {
+    color: #FFCC33; /* Optional: Add hover effect for better UX */
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.col-content {
+    flex: 1;
+    margin-bottom: 20px; /* Adjust this as needed */
+    padding: 15px;
+    box-sizing: border-box;
+}
+.col-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

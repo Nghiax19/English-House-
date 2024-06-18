@@ -1,12 +1,21 @@
-body{
-    background: linear-gradient(to left, #ff0000, #f16767);
+.hinhnen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../TrangChuyenMuc/Trang\ TA\ mat\ goc/Image/class.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(5px); /* Độ mờ của hình ảnh nền */
+    background-position: center;
+    z-index: -1;
+}
+.container-fluid{
     height: 100vh;
-    margin: 0;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     font-family: Arial, sans-serif;
 }
 div#left{
@@ -19,6 +28,7 @@ div#left{
 div#left h1{
     text-align: center;
     font-size: 7vh;
+    font-weight: bold;
 }
 div#right{
     display: flex;
@@ -29,7 +39,7 @@ div#right{
 }
 .form-dk{
     width: 55vh;
-    height: 65vh;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 1vh;
     border-radius: 1vh;
@@ -40,6 +50,7 @@ div#right{
     margin-top: 2vh;
     margin-bottom: 3vh;
     font-size: 4vh;
+    font-weight: bold;
 }
 .form-group {
     margin-top: 1vh;
