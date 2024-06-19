@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiếng anh trẻ em</title>
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(226, 214, 214, 0.9) !important;
+            
+        }
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+        padding-top: 102px;
+        }
+    </style>
     <link rel="icon" href="../../../Trang chu/Image/logo.png">
     <link rel="stylesheet" href = "../bootstrap.min.css">
     <script src="../../bootstrap.min.css"></script>
@@ -12,6 +27,7 @@
     <link rel="stylesheet" href="../../bootstrap.min.css">
     <script src="../../bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="chuyenmuc.css">
+    <link rel="stylesheet" href="../../Trang chu/themify-icons/themify-icons.css">
 </head>
 <body>
     <!--menu-->
@@ -20,10 +36,13 @@
     
         <div class="container mt-0 " >
             <ul id="nav">
-                <li><a href="">Trang chủ</a></li>
+                <li><a href="">
+                    <img src="/Trang chu/Image/logopng.png" alt="" style="height: 46px;width: 46px;">
+                    Trang chủ</a>
+                </li>
                 <li><a href="">Về chúng tôi</a></li>
                 <li>
-                    <a href="../TrangChuyenMuc/trangchuyenmuc.html">
+                    <a href="../trangchuyenmuc.html">
                         Khoá học
                         <i class="navicon ti-angle-down"></i>
 
@@ -240,5 +259,24 @@
           </div>
         </div>
       </footer>
+      <script>
+        // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    // Get the header
+    var header = document.getElementById("myHeader");
+    
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+       </script>
 </body>
 </html>

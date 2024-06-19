@@ -1,3 +1,82 @@
+/*css menu*/
+.menu{
+    height: 46px;
+    background-color: rgb(242, 209, 145);
+    left: 0;
+    right: 0;
+}
+#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   
+}
+#nav li {
+    position: relative;
+    display: inline-block;
+    
+}
+#nav a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    
+}
+#nav li a{
+    text-decoration: none;
+    line-height:46px ;
+    padding: 0 24px;
+    display: block;
+    text-align: center;
+}
+/* Định dạng cho subnav */
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+   z-index: 1000;
+   
+    
+}
+.subnav li {
+    display: block;
+    width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
+    
+}
+.subnav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+/* Đổi màu nền khi hover vào các mục chính */
+#nav li:hover > a {
+    background-color: rgb(136, 131, 131);
+    color: red; 
+}
+/* Hiển thị subnav khi hover vào li cha */
+#nav li:hover > .subnav {
+    display: block;
+    width: 100%;
+    left: 0;
+}
+/* Đổi màu chữ khi hover vào các li con */
+.subnav li:hover > a {
+    color: white !important;
+    background-color: red !important;
+}
+a {
+    transition: color 0.3s;
+}
 body {
     background-color: #ffffff;
     color: #333333;
