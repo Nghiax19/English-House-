@@ -29,7 +29,7 @@ section .highlight{
 }
 section p{
     margin-left: 50px;
-    margin-right: 20px;
+    margin-right: 50px;
     font-size: 15px;
 }
 img.banner{
@@ -43,6 +43,15 @@ img.banner{
     border-radius: 30px;
     height: 600px;
     margin: 20px;
+}
+#courses ul{
+    
+    margin-left: 50px;
+    margin-right: 20px;
+    text-align: justify;
+}
+#left ul li{
+    margin-top: 5px;
 }
 section .btn-primary {
     background-color: #ff6c67;
