@@ -1,0 +1,113 @@
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    color: #d9534f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.banner {
+    width: 100%;
+    height: 400px;
+}
+#left{
+    padding: 20px;
+    border-top: 6px solid #d9534f;
+    border-right: 6px solid #d9534f ;
+    border-left: 6px solid #d9534f;
+    border-bottom: 6px solid #d9534f;
+    
+}
+#right{
+    border-left: 6px solid #d9534f ;
+    padding: 20px;
+    border-top: 6px solid #d9534f;
+    overflow-y: auto;
+    height: 1913px;
+    border-bottom: 6px solid #d9534f ;
+    
+}
+.highlight{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+.col-sm {
+    border: 5px solid #d9534f;
+    margin-top: 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+.col-sm h3{
+    color: #d9534f;
+    font-size: 20px;
+    font-weight: bold;
+}
+.col-sm img{
+    margin-top: 10%;
+    width: 80%;
+    height: 400px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 3px solid #d9534f;
+}
+ .btn-primary {
+    background-color: #ff6c67;
+    border-color: #ff6c67;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+#left p {
+    text-indent:1%;
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#left ul{
+    
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: justify;
+}
+#left ul li{
+    margin-top: 5px;
+}
+#left img {
+    margin-left: 30px;
+    width: 96%;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.col-content a {
+    text-decoration: none;
+    color: inherit; /* Ensures the links have the same color as surrounding text */
+}
+
+.col-content a:hover {
+    color: #FFCC33; /* Optional: Add hover effect for better UX */
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.col-content {
+    flex: 1;
+    margin-bottom: 20px; /* Adjust this as needed */
+    padding: 15px;
+    box-sizing: border-box;
+}
+.col-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
