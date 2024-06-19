@@ -4,14 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khóa học IELTS</title>
-    <link rel="stylesheet" href = "../bootstrap.min.css">
-    <script src="../../bootstrap.min.css"></script>
+    <link rel="stylesheet" href = "../../bootstrap.min.css">
+    <script src="../../bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <link rel="stylesheet" href="chuyenmucielt.css">
+    <link rel="stylesheet" href="chuyenmucielt.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="../../Trang chu/themify-icons/themify-icons.css">
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(226, 214, 214, 0.9) !important;
+           
+        }
+
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+        padding-top: 102px;
+        }
+    </style>
+
 </head>
 <body>
-    <img class="banner" src="img/banner ielts.png" alt="">
+
+    <!--menu-->
+    <div class="menu container-fluid header " id="myHeader">
+        <!--Bắt đầu menu-->
+   
+        <div class="container mt-0 " >
+            <ul id="nav">
+                <li><a href="">
+                    <img src="/Trang chu/Image/logopng.png" alt="" style="height: 46px;width: 46px;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTrang chủ</a>
+                </li>
+                <li><a href="">Về chúng tôi</a></li>
+                <li>
+                    <a href="../trangchuyenmuc.html">
+                        Khoá học
+                        <i class="navicon ti-angle-down"></i>
+
+
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Tiếng Anh Giao Tiếp</a></li>
+                        <li><a href="">IELTS</a></li>
+                        <li><a href="">TOEIC</a></li>
+                        <li><a href="">Tiếng Anh Thiếu Nhi</a></li>
+                        <li><a href="">Tiếng Anh Mất Gốc</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Lịch khai giảng</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Hỗ trợ</a></li>
+            </ul>
+   
+        </div>
+    </div>
+
+    <!--Slider dùng carousel trong bootstrap 5-->
+    <div class="container-fluid">
+        <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+  <!-- Indicators/dots: Bbên dưới ảnh banner -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel: Hình -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <a href="../../Trang chu/index.html">
+      <img src="img/banner ielts.png" alt="Banner 1" class="d-block w-100" style="height: 550px;width: 100%;object-fit: cover;">
+        </a>
+    </div>
+    <div class="carousel-item">
+        <a href="../../Trang chu/index.html">
+      <img src="img/banner ielts 3.jpg" alt="Banner 2" class="d-block w-100" style="height: 550px;width: 100%;object-fit: cover;">
+        </a>
+    </div>
+    <div class="carousel-item">
+        <a href="../../Trang chu/index.html">
+      <img src="img/banner ielts 6.jpg" alt="Banner 3" class="d-block w-100" style="height: 550px;width: 100%;object-fit: cover;">
+        </a>
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons: Mũi tên trái phải-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+    
     <!-- Main Content -->
     <div class="container-fluid mt-4">
         <div class="row">
@@ -19,13 +114,16 @@
             <div class="col-md-8" id="left">
                 <!-- Introduction Section -->
                 <div id="gioithieu">
-                    <h2 class="section-title">Giới thiệu khóa học</h2>
+                    <div class="card mt-1">
+                    <h2 class="section-title" style="color: red;">&nbsp&nbsp&nbspGiới thiệu khóa học</h2>
                     <p>Trung tâm English House tự hào giới thiệu khóa học IELTS chất lượng cao, lý tưởng cho những ai muốn nâng cao kỹ năng tiếng Anh của mình. Khóa học được giảng dạy bởi các giảng viên giàu kinh nghiệm, giúp bạn thành thạo bốn kỹ năng Nghe, Đọc, Viết và Nói, những yếu tố quan trọng trong kỳ thi IELTS. Chúng tôi cam kết mang đến một môi trường học tập hiện đại, tiện nghi và thân thiện, tạo điều kiện tốt nhất để học viên tập trung và tiến bộ từng ngày. Bên cạnh việc rèn luyện các kỹ năng thi cần thiết, khóa học còn chú trọng vào việc cung cấp những chiến lược làm bài hiệu quả, giúp bạn tự tin và kiểm soát thời gian trong kỳ thi thực tế.</p>
                     <p>Khóa học được thiết kế linh hoạt để đáp ứng nhu cầu của mọi học viên, bất kể trình độ tiếng Anh ban đầu của bạn. Từ tài liệu học tập phong phú, đến các buổi ôn tập và kiểm tra định kỳ, chúng tôi đảm bảo bạn sẽ cải thiện mỗi ngày và đạt được mục tiêu điểm số IELTS mong muốn. Với phương pháp giảng dạy tiên tiến và ứng dụng công nghệ trong quá trình học, bạn sẽ có một trải nghiệm học tập đầy thú vị và hiệu quả. Hãy đến với trung tâm English House để mở ra những cơ hội mới và thành công trong sự nghiệp của bạn!</p>
+                    </div>
                 </div>
                 <!-- Roadmap Section -->
                 <div id="lotrinh">
-                    <h2 class="section-title">Lộ trình khóa học</h2>
+                    <div class="card mt-1">
+                    <h2 class="section-title" style="color: red;">&nbsp&nbsp&nbspLộ trình</h2>
                     <p>Khóa học IELTS tại Trung tâm English House được thiết kế với lộ trình học linh hoạt, bao gồm các cấp độ từ cơ bản đến thành thạo, nhằm đáp ứng nhu cầu học tập của mọi học viên. Khóa học gồm có 4 lớp bắt đầu từ Beginner đến Intermediate, Advanced và cuối cùng là Proficient.</p>
                     <ul>
                         <li>Lớp Beginner (Sơ cấp):  Đây là bước khởi đầu lý tưởng cho những người mới bắt đầu tiếp cận với kỹ năng nghe, đọc, nói và viết IELTS. Tại đây, bạn sẽ được hướng dẫn từ các kiến thức cơ bản, như từ vựng và ngữ pháp, đến các chiến lược làm bài thi cơ bản.</li>
@@ -33,10 +131,12 @@
                         <li>Lớp Advanced (Nâng cao): Khi bạn vượt qua mức trung cấp, lớp Advanced là bước tiếp theo. Tại đây, chương trình sẽ tập trung vào việc nâng cao khả năng hiểu biết và áp dụng ngôn ngữ trong các tình huống thực tế, giúp bạn đạt được điểm số IELTS cao hơn.</li>
                         <li>Lớp Proficient (Thành thạo): Cuối cùng, lớp Proficient sẽ là nơi bạn hoàn thiện kỹ năng của mình và chuẩn bị cho kỳ thi IELTS với mục tiêu đạt điểm xuất sắc. Tại đây, bạn sẽ tiếp tục làm quen với các dạng bài thi phức tạp và được hỗ trợ bởi các chiến lược làm bài thi chuyên sâu.</li>
                     </ul>
+                    </div>
                 </div>
                 <!-- Textbooks Section -->
                 <div id="giaotrinh">
-                    <h2 class="section-title">Giáo trình</h2>
+                    <div class="card mt-1">
+                     <h2 class="section-title" style="color: red;">&nbsp&nbsp&nbspGiáo trình</h2>
                     <p>Khóa học IELTS của Trung tâm Anh ngữ English House sở hữu phương pháp giảng dạy độc quyền được xây dựng bởi Giáo sư Mark Rober, chuyên gia hàng đầu trong lĩnh vực giáo dục và luyện thi IELTS. Với nhiều năm kinh nghiệm và kiến thức chuyên môn sâu rộng, Giáo sư Mark Rober đã dày công nghiên cứu và phát triển chương trình học IELTS hiệu quả, giúp học viên đạt được điểm số cao trong kỳ thi.</p>
                     <p>Điểm nổi bật của giáo trình IELTS:</p>
                     <ul>
@@ -54,12 +154,15 @@
                     </ul>
                     <p>Với phương pháp giảng dạy độc quyền và hiệu quả, khóa học IELTS tại English House cam kết giúp học viên đạt được điểm số mong muốn trong kỳ thi IELTS. Hãy tham gia khóa học ngay hôm nay để mở ra cánh cửa đến với thành công!</p>
                     <img src="img/BEST-BOOKS-FOR-IELTS-EXAM2.jpg" alt="a">
+                    </div>
                 </div>
                 <!-- Benefits Section -->
                 <div id="loiich">
-                    <h2 class="section-title">Lợi ích của khóa học</h2>
+                    <div class="card mt-1">
+                    <h2 class="section-title" style="color: red;">&nbsp&nbsp&nbspGiới thiệu khóa học</h2>
                     <p>Khóa học IELTS tại Trung tâm English House được thiết kế để cung cấp không chỉ kiến thức sâu rộng về cấu trúc và yêu cầu của bài thi, mà còn để phát triển toàn diện kỹ năng tiếng Anh của học viên. Qua các buổi học thực hành nghe, nói, đọc và viết, học viên sẽ tiếp cận với các tình huống ngôn ngữ thực tế, giúp mở rộng vốn từ vựng và nâng cao khả năng sử dụng tiếng Anh một cách linh hoạt và hiệu quả. Khóa học giúp học viên tự tin đối mặt với kỳ thi IELTS, đồng thời chuẩn bị tốt cho họ trong việc nắm bắt cơ hội nghề nghiệp và thăng tiến trong công việc. Đến với English House, học viên không chỉ nâng cao trình độ tiếng Anh mà còn trang bị cho mình những kỹ năng cần thiết để mở ra cánh cửa thành công trong tương lai.</p>
                     <img src="img/banner ielts 5.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <!-- Right Column -->
@@ -68,7 +171,7 @@
                 <div id="cac_khoahoc">
                     <h2 class="section-title">Danh sách các khóa học</h2>
                     <div class="container"> 
-                        <div class="col-sm">
+                        <div class="col-sm course" >
                             <img src="img/class 3.jpg" alt="anh1">
                             <div class="content">
                                 <h3> Lớp Beginner (IELTS 4.0-5.0) </h3>
@@ -78,7 +181,7 @@
                             </div>
                         </div>
   
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/class 2.jpg" alt="anh2">
                             <div class="content">
                                 <h3>Lớp Intermediate (IELTS 5.0-6.0)</h3>
@@ -88,7 +191,7 @@
                             </div>
                         </div>
     
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/class 1.jpg" alt="anh3">
                             <div class="content">   
                                 <h3> Lớp Advanced (IELTS 6.0-7.0) </h3>
@@ -97,7 +200,7 @@
                                 <a href="chitietielts.html#Advanced" class="btn btn-primary">Chi Tiết Khóa Học</a>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/class 4.jpg" alt="anh3">
                             <div class="content">   
                                 <h3> Lớp Proficient (IELTS 7.0+) </h3>
@@ -113,7 +216,7 @@
                 <div id="combo_khoahoc">
                     <h2 class="section-title">Combo các khóa học</h2>
                     <div class="container"> 
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/combo 1.jpg" alt="anh1">
                             <div class="content">
                                 <h3>  Combo Beginner (IELTS 4.0-5.0) và Luyện đề</h3>
@@ -122,7 +225,7 @@
                             </div>
                         </div>
   
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/combo 2.jpg" alt="anh2">
                             <div class="content">
                                 <h3>  Combo Intermediate (IELTS 5.0-6.0) và Luyện đề </h3>
@@ -132,7 +235,7 @@
                             </div>
                         </div>
     
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/combo 3.jpg" alt="anh3">
                             <div class="content">   
                                 <h3> Combo Advanced (IELTS 6.0-7.0) và Luyện đề </h3>
@@ -140,7 +243,7 @@
                                 <a href="chitietielts.html#combo Advanced" class="btn btn-primary">Chi Tiết Khóa Học</a>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/combo 4.jpg" alt="anh3">
                             <div class="content">   
                                 <h3> Combo Proficient (IELTS 7.0+) và Luyện đề </h3>
@@ -148,7 +251,7 @@
                                 <a href="chitietielts.html#combo Proficient" class="btn btn-primary">Chi Tiết Khóa Học</a>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/combo 4.0-7.0.jpg" alt="anh3">
                             <div class="content">   
                                 <h3> Combo (4.0-7.0) và Luyện đề </h3>
@@ -156,7 +259,7 @@
                                 <a href="chitietielts.html#combo (4.0-7.0)" class="btn btn-primary">Chi Tiết Khóa Học</a>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="img/combo full.jpg" alt="anh3">
                             <div class="content">   
                                 <h3> Combo Full khóa và Luyện đề</h3>
@@ -219,5 +322,26 @@
           </div>
         </div>
       </footer>
+
+      <script>
+        // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+   
+    // Get the header
+    var header = document.getElementById("myHeader");
+   
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+   
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+       </script>
+
 </body>
 </html>

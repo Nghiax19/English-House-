@@ -6,10 +6,62 @@
     <title>Học Tiếng Anh Giao Tiếp</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="matgoc.css">
+    <link rel="icon" href="Image/logo.png">
+    <link rel="stylesheet" href="../../Trang chu/themify-icons/themify-icons.css">
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(226, 214, 214, 0.9) !important;
+           
+        }
+
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+        padding-top: 102px;
+        }
+    </style>
+
 </head>
 <body>
+<!--menu-->
+<div class="menu container-fluid header " id="myHeader">
+    <!--Bắt đầu menu-->
 
-    <section class="hero text-center">
+    <div class="container mt-0 " >
+        <ul id="nav">
+            <li><a href="">
+                <img src="/Trang chu/Image/logopng.png" alt="" style="height: 46px;width: 46px;">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTrang chủ</a>
+            </li>
+            <li><a href="">Về chúng tôi</a></li>
+            <li>
+                <a href="../trangchuyenmuc.html">
+                    Khoá học
+                    <i class="navicon ti-angle-down"></i>
+
+
+                </a>
+                <ul class="subnav">
+                    <li><a href="">Tiếng Anh Giao Tiếp</a></li>
+                    <li><a href="">IELTS</a></li>
+                    <li><a href="">TOEIC</a></li>
+                    <li><a href="">Tiếng Anh Thiếu Nhi</a></li>
+                    <li><a href="">Tiếng Anh Mất Gốc</a></li>
+                </ul>
+            </li>
+            <li><a href="">Lịch khai giảng</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Hỗ trợ</a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="mat goc" id=" trang mat goc">
+    <div class="hero text-center">
       
             <h1>HỌC TIẾNG ANH GIAO TIẾP</h1>
             <h2>CHO NGƯỜI MẤT GỐC</h2>
@@ -21,9 +73,7 @@
             <a href="#" class="btn btn-danger btn-lg btn-register">Đăng ký ngay</a>
         
         
-    </section>
-    
-
+        </div>
     
     <div class="future-section">
         <h2>Bạn sẽ thế nào nếu học kém tiếng Anh?</h2>
@@ -96,7 +146,7 @@
     </section>
 
     <section class="focus-section">
-        <div class="container">
+        <div class="container focus">
             <h2>GIỎI TIẾNG ANH VỚI 4 TRỌNG TÂM KHÓA HỌC</h2>
             <div class="focus-content">
                 <div class="focus-item" data-content-id="focus1">
@@ -204,7 +254,7 @@
         </form>
     </div>
 </div>
-
+</div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         // Lắng nghe sự kiện click trên nút Đăng ký ngay
@@ -217,8 +267,25 @@
     });
 </script>
 
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
+// Get the header
+var header = document.getElementById("myHeader");
 
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+   </script>
 
 </body>
 </html>
