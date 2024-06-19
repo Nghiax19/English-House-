@@ -51,7 +51,7 @@ body {
 .col-sm img{
     margin-top: 10%;
     width: 80%;
-    height: 400px;
+    height: 300px;
     margin-bottom: 10px;
     border-radius: 20px;
     border: 3px solid #d9534f;
@@ -81,7 +81,7 @@ body {
 #left img {
     margin-left: 30px;
     width: 96%;
-    height: 300px;
+    height: 450px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
