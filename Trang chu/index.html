@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="camnhan.css">
     <script src="camnhan.js" defer></script>
+    <link rel="stylesheet" href="popup.css">
     <style>
         /* Định dạng placeholder */
         .form-control::placeholder {
@@ -66,8 +67,8 @@
         <!--Bắt đầu menu-->
         <div class="container mt-0 " >
             <ul id="nav">
-                <li><a href="">Trang chủ</a></li>
-                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#footer">Về chúng tôi</a></li>
                 <li>
                     <a href="../TrangChuyenMuc/trangchuyenmuc.html">
                         Khoá học
@@ -75,16 +76,16 @@
 
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Tiếng Anh Giao Tiếp</a></li>
-                        <li><a href="">IELTS</a></li>
-                        <li><a href="">TOEIC</a></li>
-                        <li><a href="">Tiếng Anh Thiếu Nhi</a></li>
-                        <li><a href="">Tiếng Anh Mất Gốc</a></li>
+                        <li><a href="/TrangChuyenMuc/chuyenmucgiaotiep/chuyenmucgiaotiep.html">Tiếng Anh Giao Tiếp</a></li>
+                        <li><a href="/TrangChuyenMuc/chuyen muc ielts/chuyenmucielts.html">IELTS</a></li>
+                        <li><a href="/TrangChuyenMuc/chuyen muc toeic/chuyenmuctoeic.html">TOEIC</a></li>
+                        <li><a href="/TrangChuyenMuc/tienganhtreem/chuyenmuc.html">Tiếng Anh Trẻ Em</a></li>
+                        <li><a href="/TrangChuyenMuc/Trang TA mat goc/matgoc.html">Tiếng Anh Mất Gốc</a></li>
                     </ul>
                 </li>
-                <li><a href="">Lịch khai giảng</a></li>
-                <li><a href="">Tin tức</a></li>
-                <li><a href="">Hỗ trợ</a></li>
+                <li><a href="/TrangChuyenMuc/trangchuyenmuc.html">Lịch khai giảng</a></li>
+                <li><a href="#intro">Tin tức</a></li>
+                <li><a href="#DKNTV">Hỗ trợ</a></li>
             </ul>
         </div>
     </div>
@@ -122,7 +123,7 @@
 </div>
 </div>
     <!--Module gthieu trung tâm-->
-    <div class="container" style="display: flex;justify-content: center;align-items: center;">
+    <div id="intro" class="container" style="display: flex;justify-content: center;align-items: center;">
         <div class="card mt-2">
             <div class="row ">
                 <div class="col-sm-8 col-md-8">
@@ -163,7 +164,7 @@
                                 Khóa học <strong>"English for All Skills" </strong>cung cấp nền tảng vững chắc về tiếng Anh, tập trung vào bốn kỹ năng chính: nghe, nói, đọc và viết. Học viên sẽ được thực hành thông qua các bài tập đa dạng và tình huống thực tế, giúp cải thiện khả năng giao tiếp, từ vựng và ngữ pháp. Khóa học phù hợp cho mọi trình độ, từ cơ bản đến nâng cao, nhằm nâng cao sự tự tin và hiệu quả trong việc sử dụng tiếng Anh hàng ngày.</p>
                                 <div class="price" style="font-weight: bold;font-size: 20px;color: red;">4.999.999 VNĐ</div>
                                 <span style="text-decoration: line-through;color: #6c757d;">6.000.000 VNĐ</span>
-                            <a href="#" class="card-link" style="align-items: center;">Chi Tiết</a>
+                            <a href="/TrangChuyenMuc/chuyenmucgiaotiep/chuyenmucgiaotiep.html" class="card-link" style="align-items: center;">Chi Tiết</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +177,7 @@
                                 <strong>"English for Children"</strong> là khoá học giúp trẻ em học tiếng Anh thông qua các hoạt động vui nhộn và sáng tạo. Chương trình tập trung vào việc phát triển kỹ năng nghe, nói, đọc và viết thông qua trò chơi, bài hát và câu chuyện, giúp trẻ yêu thích tiếng Anh ngay từ những ngày đầu. Khóa học phù hợp cho trẻ từ 4 đến 12 tuổi, tạo nền tảng vững chắc và khuyến khích sự tự tin trong giao tiếp bằng tiếng Anh. </p>                
                                 <div class="price" style="font-weight: bold;font-size: 20px;color: red;">3.999.999 VNĐ</div>
                                 <span style="text-decoration: line-through;color: #6c757d;">5.000.000 VNĐ</span>
-                                <a href="#" class="card-link" style="align-items: center;">Chi Tiết</a>
+                                <a href="/TrangChuyenMuc/tienganhtreem/chuyenmuc.html" class="card-link" style="align-items: center;">Chi Tiết</a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +190,7 @@
                                 <strong>"English for Beginners"</strong> cung cấp nền tảng về tiếng Anh cho người mới bắt đầu, tập trung vào phát âm và kỹ năng giao tiếp. Học viên sẽ học từ vựng cơ bản dùng trong giao tiếp hàng ngày, nắm vững các cấu trúc ngữ pháp đơn giản, rèn luyện phát âm theo bảng phiên âm chuẩn quốc tế IPA. Khóa học phù hợp cho những ai bắt đầu từ con số 0, giúp tự tin giao tiếp và chuẩn bị cho các trình độ cao hơn.</p>
                                 <div class="price" style="font-weight: bold;font-size: 20px;color: red;">4.499.999 VNĐ</div>
                                 <span style="text-decoration: line-through;color: #6c757d;">6.750.000 VNĐ</span>
-                                <a href="#" class="card-link" style="align-items: center;">Chi Tiết</a>
+                                <a href="/TrangChuyenMuc/Trang TA mat goc/matgoc.html" class="card-link" style="align-items: center;">Chi Tiết</a>
                         </div>
                     </div>
                 </div>
@@ -305,7 +306,7 @@
             </div>
     </div>
     <!--Footer-->
-    <footer class="bg-dark text-white py-5 mt-3">
+    <footer id="footer" class="bg-dark text-white py-5 mt-3">
         <div class="container">
           <div class="row">
             <div
@@ -323,7 +324,7 @@
   
             <div class="col-md-3 col-content">
               <h5>Hỗ Trợ Khách Hàng</h5>
-              <p><a href="#">Tư vấn khoá học</a></p>
+              <p><a href="#DKNTV">Tư vấn khoá học</a></p>
               <p><a href="#">Hỏi đáp</a></p>
               <h5 style="font-size: 15px; color: #FFCC33  ;">CHẤP NHẬN THANH TOÁN</h5>
             <img src="Image/pay.png">
@@ -355,6 +356,7 @@
           </div>
         </div>
       </footer>
+    
     <script>
         function kiemTraDangKy() 
         {
@@ -410,24 +412,25 @@
             });    
         };
     </script>
+    <!--Script cố định menu-->
    <script>
-    // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
 
-// Get the header
-var header = document.getElementById("myHeader");
+        // Get the header
+        var header = document.getElementById("myHeader");
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
    </script>
 
 <script>
@@ -448,5 +451,6 @@ function myFunction() {
         });
     });
 </script>
+
 </body>
 </html>
