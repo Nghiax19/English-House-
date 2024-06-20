@@ -5,12 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuyên Mục Tiếng Anh</title>
     <link rel="stylesheet" href="trangchuyenmuc.css">
-    <link rel="stylesheet" href = "/bootstrap.min.css">
-    <script src="/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="../../../Trang chu/Image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <script src="/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../Trang chu/themify-icons/themify-icons.css">
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(226, 214, 214, 0.9) !important;
+            color: black !important;
+        }
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky + .content {
+        padding-top: 102px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container-fluid mt-4 ">
+    <script>
+
+        
+        // Get the header
+        var header = document.getElementById("myHeader");
+        
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() 
+        {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+    </script>
+    <!--menu-->
+    <div class="menu container-fluid header " id="myHeader">
+        <!--Bắt đầu menu-->
+    
+        <div class="container mt-0 " >
+            <ul id="nav">
+                <li><a href="/Trang chu/index.html">
+                    <img src="/Trang chu/Image/logopng.png" alt="" style="height: 46px;width: 46px;">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTrang chủ</a>
+                </li>
+                <li><a href="">Về chúng tôi</a></li>
+                <li>
+                    <a href="/TrangChuyenMuc/trangchuyenmuc.html">
+                        Khoá học
+                        <i class="navicon ti-angle-down"></i>
+
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="/TrangChuyenMuc/trangchuyenmuc.html#giao-tiep">Tiếng Anh Giao Tiếp</a></li>
+                        <li><a href="/TrangChuyenMuc/trangchuyenmuc.html#ielts">IELTS</a></li>
+                        <li><a href="/TrangChuyenMuc/trangchuyenmuc.html#toeic">TOEIC</a></li>
+                        <li><a href="/TrangChuyenMuc/trangchuyenmuc.html#thieu-nhi">Tiếng Anh Thiếu Nhi</a></li>
+                        <li><a href="/TrangChuyenMuc/trangchuyenmuc.html#mat-goc">Tiếng Anh Mất Gốc</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Lịch khai giảng</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Hỗ trợ</a></li>
+            </ul>
+    
+        </div>
+    </div>
+    <div class="container-fluid mt-4 " id="danhmuc">
         <div class="row">
             <aside class="col-md-4 sidebar"  id="left">
                 <div class="list-group">
@@ -26,17 +97,17 @@
                 </div>
             </aside>
             <main class="col-md-8 main-content">
-                <section id="giao-tiep" class="mb-4">
+                <section id="giao-tiep" class="mb-4"x`>
                     <h2>Tiếng Anh Giao Tiếp</h2>
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Lộ Trình Khóa Học</h3>
                             <p class="card-text">
-                                Mô tả về lộ trình học Tiếng Anh Giao Tiếp...
+                                Khóa học giao tiếp tại English House được thiết kế chi tiết và chia thành các giai đoạn cụ thể, đảm bảo học viên tiếp thu kiến thức hiệu quả. Giai đoạn đầu là kỹ năng nghe và phản xạ, luyện tập qua các đoạn hội thoại thực tế. Kỹ năng nói được cải thiện thông qua các tình huống giao tiếp hàng ngày. Phát âm chuẩn được luyện tập với giáo viên bản ngữ. Học viên cũng học từ vựng và ngữ pháp căn bản để áp dụng trong giao tiếp thực tế. Cuối cùng, các hoạt động nhóm và thảo luận giúp phát triển kỹ năng giao tiếp nhóm và thuyết trình.
                                 </p>
                                 <h3 class="card-title">Phương Pháp Giảng Dạy</h3>
                                 <p class="card-text">
-                                    Mô tả về phương pháp giảng dạy Tiếng Anh Giao Tiếp...
+                                    Tại English House, chúng tôi sử dụng phương pháp giảng dạy hiện đại và hiệu quả để học viên nắm vững kiến thức và tự tin sử dụng tiếng Anh. Buổi học sinh động, tương tác cao, kết hợp lý thuyết và thực hành. Học viên tham gia tích cực vào các hoạt động như thảo luận, đặt câu hỏi và thực hành giao tiếp. Chú trọng vào tình huống giao tiếp thực tế, môi trường học tập sôi động và hiệu quả. Sử dụng công nghệ hiện đại, kế hoạch học tập cá nhân, và đánh giá định kỳ. Cam kết mang lại một môi trường học tiên tiến, hỗ trợ tối đa trong việc chinh phục tiếng Anh và tự tin giao tiếp.
                                     </p>
                             <a href="chuyenmucgiaotiep/chuyenmucgiaotiep.html" class="btn btn-primary">Xem Chi Tiết Khóa Học</a>
                         </div>
@@ -47,12 +118,12 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Lộ Trình Khóa Học</h3>
-                            <p class="card-text">Mô tả về lộ trình học IELTS...</p>
+                            <p class="card-text">Khóa học IELTS tại Trung tâm English House được thiết kế linh hoạt với 4 cấp độ từ Beginner đến Proficient, phù hợp với mọi học viên. Từ lớp Beginner, học viên bắt đầu với kiến thức cơ bản và chiến lược làm bài thi. Lớp Intermediate mở rộng và củng cố kỹ năng. Lớp Advanced tập trung vào áp dụng ngôn ngữ trong tình huống thực tế. Lớp Proficient hoàn thiện kỹ năng và chuẩn bị cho kỳ thi với các chiến lược chuyên sâu. Mỗi cấp độ đều mang lại sự tiến bộ rõ ràng, giúp học viên tự tin đạt được mục tiêu IELTS của mình.</p>
                             <h3 class="card-title">Phương Pháp Giảng Dạy</h3>
                                 <p class="card-text">
-                                    Mô tả về phương pháp giảng dạy IELTS...
+                                    Trung tâm English House cam kết cung cấp phương pháp giảng dạy IELTS hiện đại và hiệu quả. Chúng tôi tập trung vào lộ trình học linh hoạt với các cấp độ từ cơ bản đến thành thạo, đáp ứng nhu cầu học tập của mọi học viên. Khóa học được thiết kế sinh động, kết hợp lý thuyết và thực hành. Học viên được hướng dẫn từ kiến thức cơ bản đến các chiến lược làm bài thi chuyên sâu, giúp họ tự tin và thành công trong kỳ thi IELTS.
                                     </p>
-                            <a href="chi-tiet-lop.html" class="btn btn-primary">Xem Chi Tiết Khóa Học</a>
+                            <a href="/TrangChuyenMuc/chuyen muc ielts/chuyenmucielts.html" class="btn btn-primary">Xem Chi Tiết Khóa Học</a>
                         </div>
                     </div>
                 </section>
@@ -61,10 +132,10 @@
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Lộ Trình Khóa Học</h3>
-                            <p class="card-text">Mô tả về lộ trình học TOEIC...</p>
+                            <p class="card-text">Khóa học Toeic tại Trung tâm English House có lộ trình linh hoạt với 4 cấp độ từ Basic đến Advanced, đáp ứng mọi nhu cầu học viên. Từ kiến thức cơ bản ở lớp Basic, học viên tiếp tục phát triển kỹ năng ở lớp Intermediate. Lớp 500-650+ tập trung vào nâng cao hiểu biết và áp dụng ngôn ngữ. Lớp 650-750+ giúp hoàn thiện kỹ năng và chuẩn bị cho kỳ thi với các chiến lược chuyên sâu. Mỗi cấp độ mang lại sự tiến bộ rõ ràng, giúp học viên tự tin đạt được mục tiêu Toeic của mình.</p>
                             <h3 class="card-title">Phương Pháp Giảng Dạy</h3>
                                 <p class="card-text">
-                                    Mô tả về phương pháp giảng dạy TOEIC...
+                                    Trung tâm English House tự hào với phương pháp giảng dạy Toeic hiện đại và hiệu quả. Chúng tôi áp dụng một lộ trình học linh hoạt, từ cơ bản đến nâng cao, đảm bảo phù hợp với mọi học viên. Khóa học được thiết kế chặt chẽ, bao gồm các lớp Basic, Intermediate, 500-650+, và 650-750+, mỗi lớp tập trung vào việc củng cố kiến thức và rèn luyện kỹ năng theo từng mức độ. Bằng việc kết hợp lý thuyết và thực hành, chúng tôi cam kết giúp học viên nâng cao điểm số Toeic một cách tự tin và hiệu quả.
                                     </p>
                             <a href="chuyen muc toeic/chuyenmuctoeic.html" class="btn btn-primary">Xem Chi Tiết Khóa Học</a>
                         </div>
@@ -76,11 +147,11 @@
                         <div class="card-body">
                             <h3 class="card-title">Lộ Trình Khóa Học</h3>
                             <p class="card-text">
-                                Mô tả về lộ trình học Tiếng Anh Thiếu Nhi...
+                                Khóa học Tiếng Anh Trẻ Em tại Trung tâm English House có lộ trình linh hoạt từ Pre-Starters đến Flyers, đáp ứng mọi nhu cầu học viên nhỏ tuổi. Từ lớp Pre-Starters, các bé được tiếp xúc với từ vựng và mẫu câu đơn giản qua các hoạt động học mà chơi. Lớp Starters mở rộng kiến thức và kỹ năng qua thực hành tương tác. Lớp Movers và Flyers tập trung vào nâng cao khả năng đọc hiểu, viết và chuẩn bị cho kỳ thi quốc tế. Mỗi cấp độ đều giúp các bé phát triển tự tin và thành công trong hành trình học tập của mình.
                                 </p>
                                 <h3 class="card-title">Phương Pháp Giảng Dạy</h3>
                                 <p class="card-text">
-                                    Mô tả về phương pháp giảng dạy Tiếng Anh Thiếu Nhi...
+                                    English House dành sự chú ý đặc biệt cho phương pháp giảng dạy Tiếng Anh Trẻ Em. Chúng tôi kết hợp học và chơi để tạo ra môi trường học tập thú vị và hiệu quả. Các buổi học sinh động, tương tác và sáng tạo, tập trung vào việc phát triển kỹ năng ngôn ngữ tự nhiên qua các hoạt động nhóm, trò chơi, và câu chuyện. Bằng cách này, chúng tôi giúp các bé học tiếng Anh một cách tự tin, vui vẻ và hiệu quả từ những bước đầu tiên.
                                     </p>
                             <a href="tienganhtreem/chuyenmuc.html" class="btn btn-primary">Xem Chi Tiết Khóa Học</a>
                         </div>
@@ -92,12 +163,12 @@
                         <div class="card-body">
                             <h3 class="card-title">Lộ Trình Khóa Học</h3>
                             <p class="card-text">
-                                Mô tả về lộ trình học Tiếng Anh Mất Gốc...
+                                Khóa học mất gốc tại English House có lộ trình giảng dạy linh hoạt và chặt chẽ. Từ các khái niệm cơ bản đến các kỹ năng phức tạp, chúng tôi tạo điều kiện cho học viên tiếp cận kiến thức một cách tự tin và hiệu quả. Bằng cách kết hợp lý thuyết và thực hành, học viên được khuyến khích tạo ra môi trường học tập tích cực, từ đó xây dựng nền tảng vững chắc cho sự thành công trong hành trình học tập của mình.
                                 
                                 </p>
                                 <h3 class="card-title">Phương Pháp Giảng Dạy</h3>
                                 <p class="card-text">
-                                    Mô tả về phương pháp giảng dạy Tiếng Anh Mất Gốc...
+                                    Khóa học mất gốc tại English House áp dụng phương pháp giảng dạy cơ động và tự động. Chúng tôi tạo điều kiện thuận lợi để học viên xây dựng nền tảng kiến thức từ các khía cạnh cơ bản. Bằng việc kết hợp lý thuyết và thực hành, chúng tôi khuyến khích sự tương tác và sáng tạo. Mỗi bài học đều được thiết kế linh hoạt để phản ánh nhu cầu và tiến trình học tập của học viên, giúp họ tự tin vượt qua thách thức và đạt được mục tiêu.
                                     </p>
                             <a href="Trang TA mat goc/matgoc.html" class="btn btn-primary">Xem Chi Tiết Khóa Học</a>
                         </div>

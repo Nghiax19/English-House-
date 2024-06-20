@@ -1,9 +1,95 @@
+/*css menu*/
+.menu{
+    height: 56px;
+    background-color: #EE4E4E;
+    left: 0;
+    right: 0;
+    margin-bottom: -20px;
+}
+#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   
+}
+#nav li {
+    position: relative;
+    display: inline-block;
+    
+}
+#nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    
+}
+#nav li a{
+    text-decoration: none;
+    line-height:46px ;
+    padding: 0 24px;
+    display: block;
+    text-align: center;
+}
+/* Định dạng cho subnav */
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+   z-index: 1000;
+   
+    
+}
+.subnav li {
+    display: block;
+    width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
+    
+}
+.subnav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+/* Đổi màu nền khi hover vào các mục chính */
+#nav li:hover > a {
+    background-color: #FFBD59;
+    color: #e4131a; 
+    font-weight: bold;
+}
+/* Hiển thị subnav khi hover vào li cha */
+#nav li:hover > .subnav {
+    display: block;
+    width: 100%;
+    left: 0;
+}
+.subnav li>a{
+    color: #333333 !important;
+}
+/* Đổi màu chữ khi hover vào các li con */
+.subnav li:hover > a {
+    color: rgb(14, 14, 14) !important;
+    background-color: #FFBD59 !important;
+    font-weight: lighter !important;
+}
+a {
+    transition: color 0.3s;
+}
 body {
     font-family: Arial, sans-serif;
     
 }
-.container-fluid {
-    background-color:#ff0303; /* Màu nền đỏ */
+#danhmuc {
+    background-color:#ff6868; /* Màu nền đỏ */
+    margin:0px;
 }
 .container #left
 {
@@ -15,39 +101,44 @@ body {
 }
 
 .sidebar .list-group-item.active {
-    background-color: #ff6c67;
-    border-color: #ff6c67;
+    background-color: #ff0800;
+    border-color: #ff0800;
     margin: 0px;
     margin-top: 30px;
     
 }
 .sidebar .list-group-item {
-    border: 1px solid #ff6c67;
+    border: 1px solid #ff0800;
 }
 .main-content h2
 { color:white ;
     margin-top: 10px;}
 .main-content .card {
     margin-bottom: 20px;
-    border: 3px solid #ff6c67;
+    border: 3px solid #ff0800;
     border-radius: 20px;
 }
 .main-content .card-title {
-    color: #d9534f;
+    color: #ff0800;
+}
+.main-content p{
+    text-align: justify;
+    text-indent: 20px;
+    margin-left: 10px;
 }
 .main-content .btn-primary {
-    background-color: #ff6c67;
-    border-color: #ff6c67;
+    background-color: #fc0800;
+    border-color: #ff0800;
 }
 .main-content .btn-primary:hover {
-    background-color: #ff6c67;
-    border-color: #ff6c67;
+    background-color: #f80800;
+    border-color: #ff0800f8;
 }
 .sidebar #image{
-    height: 78%;
+    height: 85%;
     margin-top: 25px;
     margin-bottom: 30px;
-    border: 3px solid #ff6c67;
+    border: 4px solid #ff0800;
     border-radius: 20px;
     
     
