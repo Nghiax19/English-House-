@@ -48,8 +48,7 @@
             </div>
             <div class="search">
                 <input type="text" placeholder="Bạn đang quan tâm tới khoá học...">
-                <button type="button">
-                    <i class="ti-search"></i>
+                <button type="button" class="ti-search">
                 </button>
             </div>
             <div class="menu1">
@@ -463,7 +462,7 @@
 <script>
     $(document).ready(function(){
         // Sự kiện khi click vào nút tìm kiếm
-        $('button[type="button"]').click(function(){
+        $('button.ti-search').click(function(){
             // Hiển thị thông báo
             alert("Cảm ơn bạn đã tìm kiếm!");
         });
