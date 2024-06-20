@@ -1,0 +1,110 @@
+/*css menu*/
+.menu{
+    height: 46px;
+    background-color: #EE4E4E;
+    left: 0;
+    right: 0;
+}
+#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   
+}
+#nav li {
+    position: relative;
+    display: inline-block;
+    
+}
+#nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    
+}
+#nav li a{
+    text-decoration: none;
+    line-height:46px ;
+    padding: 0 24px;
+    display: block;
+    text-align: center;
+}
+/* Định dạng cho subnav */
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+   z-index: 1000;
+   
+    
+}
+.subnav li {
+    display: block;
+    width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
+    
+}
+.subnav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+/* Đổi màu nền khi hover vào các mục chính */
+#nav li:hover > a {
+    background-color: #FFBD59;
+    color: #e4131a; 
+    font-weight: bold;
+}
+/* Hiển thị subnav khi hover vào li cha */
+#nav li:hover > .subnav {
+    display: block;
+    width: 100%;
+    left: 0;
+}
+.subnav li>a{
+    color: #333333 !important;
+}
+/* Đổi màu chữ khi hover vào các li con */
+.subnav li:hover > a {
+    color: rgb(14, 14, 14) !important;
+    background-color: #FFBD59 !important;
+    font-weight: lighter !important;
+}
+a {
+    transition: color 0.3s;
+}
+
+/*css footer*/
+.col-content a {
+    text-decoration: none;
+    color: inherit; /* Ensures the links have the same color as surrounding text */
+}
+
+.col-content a:hover {
+    color: #FFCC33; /* Optional: Add hover effect for better UX */
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.col-content {
+    flex: 1;
+    margin-bottom: 20px; /* Adjust this as needed */
+    padding: 15px;
+    box-sizing: border-box;
+}
+.col-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
