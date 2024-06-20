@@ -4,9 +4,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../TrangChuyenMuc/Trang\ TA\ mat\ goc/Image/class.png') no-repeat center center;
+    background: url('Ket-hop-2-sac-xanh-dem-den-cam-giac-moi-me-trong-thiet-ke-noi-that-trung-tam-ngoai-ngu-e1669613534886.jpg') no-repeat center center;
     background-size: cover;
-    filter: blur(5px); /* Độ mờ của hình ảnh nền */
+    filter: blur(3px); /* Độ mờ của hình ảnh nền */
     background-position: center;
     z-index: -1;
   }
@@ -40,16 +40,17 @@ div#right{
     
 }
 .form-dn{
-    width: 50vh;
-    background-color: rgba(131, 115, 115, 0.3);
+    width: 49vh;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 1vh;
     border-radius: 1vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2vh;
 }
 .form-dn h2{
     text-align: center;
     margin-bottom: 2vh;
+    margin-top: 2vh;
     font-size: 30px;
     font-weight: bold;
 }
@@ -100,9 +101,9 @@ p a {
     
 }
 div#dong2{
-    margin-left: 29vh;
+    margin-left: 26vh;
     margin-top: 1vh;
-    font-size: 1.7vh;
+    font-size: 20px;
 }
 div#right button{
     width: 100%;
@@ -115,10 +116,16 @@ div#right button{
     font-size: 3vh;
     font-weight: 700;
     font-size: 2.6vh;
-    color: #ff0000;
+    color: #000000;
     margin-bottom: 2vh;
 }
 div#left img{
     width:35vh;
      height: 35vh;
+}
+i{
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
 }
