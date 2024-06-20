@@ -16,14 +16,14 @@
 #nav li {
     position: relative;
     display: inline-block;
-    
+   
 }
 #nav a {
     display: block;
     padding: 15px;
     color: white;
     text-decoration: none;
-    
+   
 }
 #nav li a{
     text-decoration: none;
@@ -45,12 +45,12 @@
     min-width: 200px;
    z-index: 1000;
    
-    
+   
 }
 .subnav li {
     display: block;
     width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
-    
+   
 }
 .subnav a {
     display: block;
@@ -62,7 +62,7 @@
 /* Đổi màu nền khi hover vào các mục chính */
 #nav li:hover > a {
     background-color: #FFBD59;
-    color: #e4131a; 
+    color: #e4131a;
     font-weight: bold;
 }
 /* Hiển thị subnav khi hover vào li cha */
@@ -83,6 +83,10 @@
 a {
     transition: color 0.3s;
 }
+.course:hover{
+    background-color: bisque;
+}
+
 body {
     font-family: Arial, sans-serif;
     
