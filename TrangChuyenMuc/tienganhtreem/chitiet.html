@@ -11,14 +11,11 @@
             width: 100%;
             z-index: 10;
             background-color: rgba(226, 214, 214, 0.9) !important;
-            color: black !important;
-            
+            color: black !important;   
         }
-
         /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
         .sticky + .content {
         padding-top: 102px;
-        
         }
     </style>
     <link rel="icon" href="../../../Trang chu/Image/logo.png">
@@ -33,7 +30,6 @@
     <!--menu-->
     <div class="menu container-fluid header " id="myHeader">
         <!--Bắt đầu menu-->
-    
         <div class="container mt-0 " >
             <ul id="nav">
                 <li><a href="">
@@ -48,20 +44,22 @@
 
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Tiếng Anh Giao Tiếp</a></li>
-                        <li><a href="">IELTS</a></li>
-                        <li><a href="">TOEIC</a></li>
-                        <li><a href="">Tiếng Anh Thiếu Nhi</a></li>
-                        <li><a href="">Tiếng Anh Mất Gốc</a></li>
+                        <li><a href="../chuyenmucgiaotiep/chuyenmucgiaotiep.html">Tiếng Anh Giao Tiếp</a></li>
+                        <li><a href="../chuyen muc ielts/chuyenmucielts.html">IELTS</a></li>
+                        <li><a href="../chuyen muc toeic/chuyenmuctoeic.html">TOEIC</a></li>
+                        <li><a href="chuyenmuc.html">Tiếng Anh Trẻ Em</a></li>
+                        <li><a href="../Trang TA mat goc/matgoc.html">Tiếng Anh Mất Gốc</a></li>
                     </ul>
                 </li>
-                <li><a href="">Lịch khai giảng</a></li>
-                <li><a href="">Tin tức</a></li>
-                <li><a href="">Hỗ trợ</a></li>
+                <li><a href="../trangchuyenmuc.html">Lịch khai giảng</a></li>
+                <li><a href="/Trang chu/index.html#intro">Tin tức</a></li>
+                <li><a href="/Trang chu/index.html#DKNTV">Hỗ trợ</a></li>
             </ul>
-    
         </div>
     </div>
+
+    <!--Slider-->
+    
 
     <footer class="bg-dark text-white py-5 mt-3">
         <div class="container">
@@ -113,4 +111,23 @@
           </div>
         </div>
       </footer>
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+        
+        // Get the header
+        var header = document.getElementById("myHeader");
+        
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+    </script>
 </body>
