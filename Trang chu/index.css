@@ -389,3 +389,40 @@ h3{
     height: auto;
     display: block;
 }
+.social {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+.social ul {
+    list-style-type: none; /* Loại bỏ dấu chấm */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social li {
+    margin: 10px 0;
+}
+.social img {
+    display: block;
+    width: 40px; 
+    height: 40px; 
+    transition: transform 0.3s ease; 
+    
+}
+.social img:hover {
+    transform: scale(1.5); /* Tăng kích thước khi hover */
+    
+}
+.social li img {
+    width: 40px; /* Kích thước icon */
+    height: 40px;
+    object-fit: contain;
+}
+h3:hover{
+    animation: none;
+    transform: scale(1.5);
+}
