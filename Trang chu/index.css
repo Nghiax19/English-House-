@@ -480,12 +480,8 @@ h3:hover{
   }
   
   #giftButton:hover {
-    background: rgba(8, 155, 106, 0.878);
-    color: rgb(
-      244,
-      244,
-      155
-    ); /*root đặt màu orange là biến nên phần tử này là biến tái sử dụng màu cam*/
+    background: rgba(217, 59, 59, 0.878);
+    color: rgb(25, 25, 25); 
   }
   
   #popupImage {
