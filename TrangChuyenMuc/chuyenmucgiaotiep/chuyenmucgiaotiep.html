@@ -4,13 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khóa học Giao Tiếp</title>
+    <style>
+      .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 10;
+          background-color: rgba(226, 214, 214, 0.9) !important;
+         
+      }
+
+
+      /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+      .sticky + .content {
+      padding-top: 102px;
+      }
+  </style>
+
     <link rel="stylesheet" href = "../../bootstrap.min.css">
     <script src="../../bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <link rel="stylesheet" href="chuyenmucgiaotiep.css">
+     <link rel="icon" href="logo.png">
+     <link rel="stylesheet" href="../../Trang chu/themify-icons/themify-icons.css">
 </head>
 <body>
+  <!--menu-->
+  <div class="menu container-fluid header " id="myHeader">
+    <!--Bắt đầu menu-->
+
+    <div class="container mt-0 " >
+        <ul id="nav">
+            <li><a href="">
+                <img src="logopng.png" alt="" style="height: 46px;width: 46px;">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTrang chủ</a>
+            </li>
+            <li><a href="">Về chúng tôi</a></li>
+            <li>
+                <a href="../trangchuyenmuc.html">
+                    Khoá học
+                    <i class="navicon ti-angle-down"></i>
+
+
+                </a>
+                <ul class="subnav">
+                    <li><a href="">Tiếng Anh Giao Tiếp</a></li>
+                    <li><a href="">IELTS</a></li>
+                    <li><a href="">TOEIC</a></li>
+                    <li><a href="">Tiếng Anh Thiếu Nhi</a></li>
+                    <li><a href="">Tiếng Anh Mất Gốc</a></li>
+                </ul>
+            </li>
+            <li><a href="">Lịch khai giảng</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Hỗ trợ</a></li>
+        </ul>
+
+    </div>
+</div>
+<script>
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset > sticky) {
+  header.classList.add("sticky");
+} else {
+  header.classList.remove("sticky");
+}
+}
+ </script>
+
 
     <!--Slider dùng carousel trong bootstrap 5-->
     <div class="container-fluid">
@@ -96,7 +168,7 @@
                 <div id="cac_khoahoc">
                     <h2 class="section-title">Danh sách các khóa học</h2>
                     <div class="container"> 
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="dilam.jpg" alt="anh1">
                             <div class="content">
                                 <h3> Lớp Giao tiếp cho người đi làm </h3>
@@ -106,7 +178,7 @@
                             </div>
                         </div>
   
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="matgoc.jpg" alt="anh2">
                             <div class="content">
                                 <h3>Lớp Giao tiếp cho người mất gốc</h3>
@@ -116,7 +188,7 @@
                             </div>
                         </div>
     
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="giaotiep.png" alt="anh3">
                             <div class="content">   
                                 <h3> Lớp Giao tiếp Online </h3>
@@ -125,7 +197,7 @@
                                 <a href="chitietgiaotiep.html#online" class="btn btn-primary">Chi Tiết Khóa Học</a>
                             </div>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm course">
                             <img src="nangcao.jpg" alt="anh3">
                             <div class="content">   
                                 <h3> Lớp Giao tiếp nâng cao </h3>
@@ -148,13 +220,13 @@
               class="col-md-3 col-content d-flex flex-column align-items-center"
             >
               <a href="#" class="navbar-brand nav-title mb-2" style="margin: 5px 0">
-                    <img src="/Trang chu/Image/logopng.png" alt="" height="46px" width="46px">
+                    <img src="logopng.png" alt="" height="46px" width="46px">
               </a>
               <p><strong>Địa chỉ</strong> : <a href="https://maps.app.goo.gl/pBgr9uYhXFZHzHEr8" target="_blank"> Số 12 Chùa Bộc, TP.Hà Nội</a></p>
               <p><strong>Số điện thoại</strong> : <a href="tel:01234567890"></a>+84 234567890</p>
               <p><strong>Email</strong> : <a href="mailto:enghouse@contact.com" type="Email">enghouse@contact.com</a>
                 <h2 style="font-size: 15px; color: #FFF  ;">CHỨNG NHẬN</h2>
-                <a href="https://itde.hvnh.edu.vn/" target="_blank"><img src="/Trang chu/Image/logomis.jpg" alt="logo mishvnh"></a>
+                <a href="https://itde.hvnh.edu.vn/" target="_blank"><img src="logomis.jpg" alt="logo mishvnh"></a>
             </div>
   
             <div class="col-md-3 col-content">
@@ -162,9 +234,9 @@
               <p><a href="#">Tư vấn khoá học</a></p>
               <p><a href="#">Hỏi đáp</a></p>
               <h5 style="font-size: 15px; color: #FFCC33  ;">CHẤP NHẬN THANH TOÁN</h5>
-            <img src="/Trang chu/Image/pay.png">
+            <img src="pay.png">
             <h5 style="font-size: 15px; color: #FFCC33;" class="mt-2">ỨNG DỤNG DI ĐỘNG</h5>
-            <img src="/Trang chu/Image/app.png">
+            <img src="app.png">
             </div>
   
             <div class="col-md-3 col-content">

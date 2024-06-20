@@ -1,3 +1,89 @@
+/*css menu*/
+.menu{
+    height: 46px;
+    background-color: #EE4E4E;
+    left: 0;
+    right: 0;
+}
+#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   
+}
+#nav li {
+    position: relative;
+    display: inline-block;
+   
+}
+#nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+   
+}
+#nav li a{
+    text-decoration: none;
+    line-height:46px ;
+    padding: 0 24px;
+    display: block;
+    text-align: center;
+}
+/* Định dạng cho subnav */
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+   z-index: 1000;
+   
+   
+}
+.subnav li {
+    display: block;
+    width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
+   
+}
+.subnav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+/* Đổi màu nền khi hover vào các mục chính */
+#nav li:hover > a {
+    background-color: #FFBD59;
+    color: #e4131a;
+    font-weight: bold;
+}
+/* Hiển thị subnav khi hover vào li cha */
+#nav li:hover > .subnav {
+    display: block;
+    width: 100%;
+    left: 0;
+}
+.subnav li>a{
+    color: #333333 !important;
+}
+/* Đổi màu chữ khi hover vào các li con */
+.subnav li:hover > a {
+    color: rgb(14, 14, 14) !important;
+    background-color: #FFBD59 !important;
+    font-weight: lighter !important;
+}
+a {
+    transition: color 0.3s;
+}
+
+
 body {
     background-color: #ffffff;
     color: #333333;
@@ -28,7 +114,7 @@ body {
     padding: 20px;
     border-top: 6px solid #d9534f;
     overflow-y: auto;
-    height: 1913px;
+    height: 2200px;
     border-bottom: 6px solid #d9534f ;
     
 }
@@ -36,6 +122,9 @@ body {
     font-weight: bold;
     font-size: 20px;
     color: rgb(255, 0, 0);
+}
+.course:hover{
+    background-color: #ffe367;
 }
 .col-sm {
     border: 5px solid #d9534f;
@@ -86,7 +175,6 @@ body {
     margin-top: 15px;
     margin-bottom: 10px;
 }
-
 
 .col-content a {
     text-decoration: none;
