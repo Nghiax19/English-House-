@@ -383,6 +383,15 @@
             </li>
         </ul>
     </div>
+
+    <!--Popup-->
+    <button id="giftButton" onclick="showPopup()">
+        <i class="fas fa-gift"></i> Nhấp để nhận quà!
+      </button>
+      <div id="popupContainer">
+        <img id="popupImage" src="Image/popup.png" alt="Popup Image" style="height: 600px;width: 600px;"/>
+        <button id="closeButton" onclick="closePopup()">Close</button>
+      </div>
     <script>
         function kiemTraDangKy() 
         {
@@ -477,6 +486,14 @@
         });
     });
 </script>
-
+<!--Popup-->
+    <script>
+        function showPopup() {
+            document.getElementById("popupContainer").style.display = "block";
+        }
+        function closePopup() {
+            document.getElementById("popupContainer").style.display = "none";
+        }
+    </script>
 </body>
 </html>
