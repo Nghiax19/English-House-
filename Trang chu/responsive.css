@@ -5,10 +5,10 @@
     .search{
         display: none;
     }
-    .menu1 {
+    .menu1 a:not(.login) {
         display: none;
     }
-    
+   
     .hamburger {
         display: block;
         cursor: pointer;
