@@ -1,16 +1,104 @@
-body {
+/*css menu*/
+.menu{
+    height: 46px;
+    background-color: #EE4E4E;
+    left: 0;
+    right: 0;
+    margin-bottom: -20px;
+}
+#nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   
+}
+#nav li {
+    position: relative;
+    display: inline-block;
+   
+}
+#nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+   
+}
+#nav li a{
+    text-decoration: none;
+    line-height:46px ;
+    padding: 0 24px;
+    display: block;
+    text-align: center;
+}
+/* Định dạng cho subnav */
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+   z-index: 1000;
+   
+   
+}
+.subnav li {
+    display: block;
+    width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
+   
+}
+.subnav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+/* Đổi màu nền khi hover vào các mục chính */
+#nav li:hover > a {
+    background-color: #FFBD59;
+    color: #e4131a;
+    font-weight: bold;
+}
+/* Hiển thị subnav khi hover vào li cha */
+#nav li:hover > .subnav {
+    display: block;
+    width: 100%;
+    left: 0;
+}
+.subnav li>a{
+    color: #333333 !important;
+}
+/* Đổi màu chữ khi hover vào các li con */
+.subnav li:hover > a {
+    color: rgb(14, 14, 14) !important;
+    background-color: #FFBD59 !important;
+    font-weight: lighter !important;
+}
+a {
+    transition: color 0.3s;
+}
+.course:hover{
+    background-color: bisque;
+}
+#body {
     font-family: Arial, sans-serif;
     background-color:rgb(233, 93, 93);
     color: #000;
     text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 section {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
     margin: 10px ;
-    
-    
 }
 h2{
     color:#d9534f;
@@ -24,7 +112,7 @@ h3 {
 }
 section .highlight{
     font-weight: bold;
-    color: #d9534f;
+    color: #ff0800;
     font-size: larger;
 }
 section p{
@@ -32,25 +120,25 @@ section p{
     margin-right: 20px;
     font-size: 15px;
 }
-img.banner{
-    width: 100%;
-    height: 400px;
-    background-color: #f4f4f4;
-}
 .img img{
-    width: 97%;
+    width: 70%;
     border: 10px solid #d9534f;
     border-radius: 30px;
-    height: 600px;
+    height: 500px;
     margin: 20px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 section .btn-primary {
     background-color: #ff6c67;
     border-color: #ff6c67;
     margin-bottom: 20px;
     margin-left: 50px;
+    font-size: 18px;
 }
-
 .col-content a {
     text-decoration: none;
     color: inherit; /* Ensures the links have the same color as surrounding text */

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:rgb(233, 93, 93);
+    background-color:rgb(236, 164, 164);
     color: #000;
     text-align: justify;
 }
@@ -173,14 +173,3 @@ section .btn-primary {
     margin-left: 50px;
 }
 
-.btnback{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 10px; /* Tùy chỉnh để tạo ra khoảng trắng xung quanh nút */
-    border-radius: 50%;
-}
-.btnback a {
-    color: black; /* Màu đen cho văn bản */
-    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
-}
