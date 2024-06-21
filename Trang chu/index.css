@@ -443,9 +443,10 @@ h3:hover{
     bottom: 20px;
     left: 20px;
     padding: 10px;
-    background-color: #e57f11;
-    color: #fff;
+    
+    color: #de4444;
     cursor: pointer;
+    
   }
 
   #popupContainer {
@@ -473,6 +474,7 @@ h3:hover{
   #giftButton:hover {
     background: rgba(217, 59, 59, 0.878);
     color: rgb(25, 25, 25); 
+    transform: scale(1.5);
   }
   
   #popupImage {
