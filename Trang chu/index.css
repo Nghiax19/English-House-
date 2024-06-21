@@ -22,14 +22,13 @@ body{
     height: 100%;
 }
 
+/*css menu*/
 .menu{
     height: 46px;
-    background-color: #e88585;
+    background-color: #EE4E4E;
     left: 0;
     right: 0;
 }
-
-/* Định dạng cho menu */
 #nav {
     list-style: none;
     padding: 0;
@@ -40,14 +39,14 @@ body{
 #nav li {
     position: relative;
     display: inline-block;
-    
+   
 }
 #nav a {
     display: block;
     padding: 15px;
-    color: black;
+    color: white;
     text-decoration: none;
-    
+   
 }
 #nav li a{
     text-decoration: none;
@@ -69,12 +68,12 @@ body{
     min-width: 200px;
    z-index: 1000;
    
-    
+   
 }
 .subnav li {
     display: block;
     width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
-    
+   
 }
 .subnav a {
     display: block;
@@ -85,8 +84,9 @@ body{
 }
 /* Đổi màu nền khi hover vào các mục chính */
 #nav li:hover > a {
-    background-color: white;
-    color: red; 
+    background-color: #FFBD59;
+    color: #e4131a;
+    font-weight: bold;
 }
 /* Hiển thị subnav khi hover vào li cha */
 #nav li:hover > .subnav {
@@ -94,13 +94,18 @@ body{
     width: 100%;
     left: 0;
 }
+.subnav li>a{
+    color: #333333 !important;
+}
 /* Đổi màu chữ khi hover vào các li con */
-.subnav li:hover > a {
-    color: white !important;
-    background-color: red !important;
+.subnav li:hover> a {
+    color: rgb(14, 14, 14) !important;
+    background-color: #FFBD59 !important;
+    font-weight: lighter !important;
 }
 a {
     transition: color 0.3s;
+    text-decoration: none;
 }
 .ti-search:hover {
     background-color: #ee6408;
