@@ -1,6 +1,8 @@
 body{
     margin: 0;
     font-family:Arial, Helvetica, sans-serif ;
+    overflow-y: scroll;
+    overflow-x: scroll;
 }
 .hamburger{
     display: none;
@@ -521,3 +523,6 @@ h3:hover{
     z-index: 1000;
 }
 
+h5 {
+    color: #eeb20e;
+}
