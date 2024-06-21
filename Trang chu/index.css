@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-family:Arial, Helvetica, sans-serif ;
     overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 .hamburger{
     display: none;
@@ -17,27 +17,11 @@ body{
     padding: 10px;
 }
 .images {
-   
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.app-search input {
-    padding: 5px;
-    border-radius: 15px !important;
-    border: 2px solid #ccc;
-    font-size: 13px;
-}
-.app-search button {
-    padding: 5px 10px;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 15px;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-}
+
 .menu{
     height: 46px;
     background-color: #e88585;
@@ -119,7 +103,7 @@ a {
     transition: color 0.3s;
 }
 .ti-search:hover {
-    background-color: #0056b3;
+    background-color: #ee6408;
 }
 .imgdktv {
     display: flex;
@@ -292,6 +276,7 @@ header .container {
     flex-direction: column;
     flex: 1;
     margin: 10px;
+    border: 2px solid rgb(244, 61, 61); 
 }
 .KHH .card img {
     width: 100%;
@@ -312,10 +297,7 @@ header .container {
     align-self: flex-start;
     margin-top: auto;
 }
-.KHH .card {
-    border: 2px solid rgb(244, 61, 61); 
-    
-}
+
 .KHH .card-link {
     background-color: rgb(229, 37, 37); 
     font-family: 'Times New Roman', Times, serif;
