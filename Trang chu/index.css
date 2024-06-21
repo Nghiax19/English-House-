@@ -257,7 +257,7 @@ header .container {
     color: #333;
     text-decoration: none;
     padding: 10px 15px;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 15px;
     background-color: gr;
     transition: background-color 0.3s, color 0.3s;
