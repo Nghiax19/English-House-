@@ -443,9 +443,10 @@ h3:hover{
     bottom: 20px;
     left: 20px;
     padding: 10px;
-    
+    border: none;
     color: #de4444;
     cursor: pointer;
+    animation: shake 0.5s infinite;
     
   }
 
@@ -475,6 +476,7 @@ h3:hover{
     background: rgba(217, 59, 59, 0.878);
     color: rgb(25, 25, 25); 
     transform: scale(1.5);
+    animation: none;
   }
   
   #popupImage {
