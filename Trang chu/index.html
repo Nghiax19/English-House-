@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>EngHouse</title>
     <link rel="stylesheet" href = "../bootstrap.min.css">
     <link rel="icon" href="/TrangChuyenMuc/chuyen muc ielts/img/logo.png">
     <script src="../bootstrap.bundle.min.js"></script>
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="camnhan.css">
     <script src="camnhan.js" defer></script>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="popup.css">
     <style>
         /* Định dạng placeholder */
@@ -28,8 +29,8 @@
             top: 0;
             width: 100%;
             z-index: 10;
-            background-color: rgba(245, 235, 235, 0.9);
-            font-weight: bold;
+            background-color: rgba(181, 173, 173, 0.9);
+            transition: 0.5s
         }
 
         /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
@@ -39,11 +40,9 @@
     </style>
 </head>
 <body>
-    
-    <!--Dòng chữ chạy chạy-->
     <!--Bắt đầu header-->
     <header>
-        <div class="container" style="background-color:#dcdcdc;">
+        <div class="container" style="background-color:#FFBD59;">
             <div class="logo" style="display: flex;align-items: center;">
                 <a href="index.html"><img src="Image/logopng.png" alt="Logo" height="46px" width="46px"></a>
             </div>
@@ -56,13 +55,15 @@
                 <a href="#DKNTV" class="contacticon">
                         <i class="fa-solid fa-phone-volume">&nbsp&nbsp&nbsp&nbsp1900 1511</i>
                 </a>
-                <a  href="../dangnhap/dangnhap.html">Đăng nhập</a>
+                <a  href="../dangnhap/dangnhap.html" class="login">Đăng nhập</a>
                 <a  href="../dangnhap/dangky.html">Đăng ký</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
             </div>
         </div>
     </header>
 
-    
     <div class="menu container-fluid header " id="myHeader">
         <!--Bắt đầu menu-->
         <div class="container mt-0 " >
@@ -89,8 +90,6 @@
             </ul>
         </div>
     </div>
-
-    <!--breadcrumb-->
     <!--Slider dùng carousel trong bootstrap 5-->
     <div class="container-fluid">
         <!-- Carousel -->
@@ -126,7 +125,7 @@
     <div id="intro" class="container" style="display: flex;justify-content: center;align-items: center;">
         <div class="card mt-2">
             <div class="row ">
-                <div class="col-sm-8 col-md-8">
+                <div class="col-12 col-md-8">
                     <div class="content">
                         <h2 class="title">Chào mừng bạn đến với EngHouse!</h2>
                         <p>Trước khi chúng ta có cơ hội gặp gỡ, cảm ơn bạn đã sẵn lòng tìm hiểu tại đây. Đội ngũ <strong>EngHouse</strong> rất vui được cùng bạn chia sẻ những câu chuyện đằng sau thương hiệu đáng tự hào.</p>
@@ -136,10 +135,10 @@
                         <p>Bên cạnh <strong>60+ cơ sở</strong> luyện thi IELTS toàn quốc, <strong>EngHouse</strong> hiện cũng đang sở hữu hệ sinh thái học tập ONLINE: website, fanpage, group hỗ trợ học tập hoàn toàn miễn phí giúp các bạn học viên có thể tự ôn luyện tại nhà.</p>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4">
+                <div class="col-12 col-md-4">
                     <div class="images">
                         <div class="circle big-circle">
-                            <img src="Image/anhgt.png" alt="Big Image" style="border-radius: 50%;"  >
+                            <img src="Image/anhgt.png" alt="Big Image" style="border-radius: 50%; height: 300px; width: 300px;"   >
                         </div>
                     </div>
                 </div>
@@ -238,7 +237,7 @@
     <!--cảm nhận-->
     <h3 class="mt-3 mb-4" style="color: red;font-weight: bold;">CẢM NHẬN CỦA HỌC VIÊN VỀ ENGHOUSE</h3>
     <div class="review">
-        <div class="container" style="align-items: center;">
+        <div class="container-fluid" style="align-items: center;">
             <div class="slider-wrapper">
                 <button id="prev-slide" class="slide-button material-symbols-outlined">chevron_left</button>
                 <div class="image-list">
@@ -386,17 +385,17 @@
     </div>
 
     <!--Popup-->
-    <div class="container">
-    <button id="giftButton" onclick="showPopup()">
-        <i class="fas fa-gift"></i> Nhấp để nhận quà!
-    </button>
-    <div id="overlay">    
-        <div id="popupContainer">
-            <img id="popupImage" src="Image/popup.png" alt="Popup Image" style="height: 600px;width: 600px;"/>
-            <button id="closeButton" onclick="closePopup()">Close</button>
-        </div>
-    </div> 
-</div>
+    <div class="container-fluid popup">
+        <button id="giftButton" onclick="showPopup()">
+            <i class="fas fa-gift" style="font-size: 40px;"></i>
+        </button>
+        <div id="overlay">    
+            <div id="popupContainer">
+                <img id="popupImage" src="Image/popup.png" alt="Popup Image" style="height: 600px;width: 600px;"/>
+                <button id="closeButton" onclick="closePopup()">Close</button>
+            </div>
+        </div> 
+    </div>
 
     <script>
         function kiemTraDangKy() 
@@ -504,5 +503,11 @@
         }
     </script>
 
+<!--Script responsive-->
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            alert('Nhóm chưa thể phát triển tính năng này')
+        });
+    </script>
 </body>
 </html>
