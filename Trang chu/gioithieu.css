@@ -103,11 +103,9 @@ body {
     border-radius:5px ;
     width: 40px;
     height: 60px;
-    background-color: #eb7878;
+    background-color: #f3bcbc;
     border: 1px solid #e9b1b1; /* Để tạo đường viền cho mỗi ô vuông */
 }
-
-
 .welcome-section {
     background-color: #f58a70;
     border-radius: 8px;
