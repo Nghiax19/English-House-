@@ -1,47 +1,36 @@
-# TKeWebNhom11
-**Bài Tập cuối kỳ môn Thiết Kế Web hvnh**
+
+# Bài Tập cuối kỳ môn Thiết Kế Web HVNH do nhóm 11 lớp K24HTTTA gồm 4 thành viên thực hiện
+
 Chủ đề: Thiết kế Website cho Trung tâm Tiếng Anh English House
 
 
 # English House
 
-Welcome to English House - your ultimate destination for learning English. Our platform offers a variety of courses designed to cater to different learning needs, from beginners to advanced learners.
+Chào mừng đến với English House - điểm đến tuyệt vời cho việc học tiếng Anh. Nền tảng của chúng tôi cung cấp nhiều khóa học được thiết kế để đáp ứng các nhu cầu học tập khác nhau, từ người mới bắt đầu đến người học nâng cao.
 
-## Table of Contents
+## Website gồm các phần đơn giản như:
 
-- [Home](#home)
-- [Contact](#contact)
-- [Course Catalog](#course-catalog)
+- [Trang chủ](#home)
+- [Liên hệ](#contact)
+- [Danh mục khoá học](#course-catalog)
 
-## Home
+## Trang chủ
 
-The homepage of English House provides an overview of what our platform offers. Here, you can find:
+Trang chủ của English House cung cấp tổng quan về những gì mà trung tâm của chúng tôi mang lại.
 
-- **Introduction**: A brief introduction to English House, our mission, and our approach to teaching English.
-- **Featured Courses**: Highlighted courses that are popular among our students.
-- **Testimonials**: Reviews and feedback from our students.
-- **News and Updates**: Latest news about new courses, events, and updates on the platform.
 
-## Contact
+## Liên hệ
 
-The contact page is where you can reach out to us. It includes:
+Trang liên hệ là nơi bạn có thể liên lạc với chúng tôi. Bao gồm:
 
-- **Contact Form**: A form to send us your queries, feedback, or any issues you might be facing.
-- **Contact Details**: Our email address, phone number, and physical address.
-- **Map**: An interactive map showing our location.
+- **Form Liên Hệ**: Một mẫu để gửi các thắc mắc, phản hồi hoặc bất kỳ vấn đề nào bạn đang gặp phải.
+- **Thông Tin Liên Hệ**: Địa chỉ email, số điện thoại và địa chỉ thực tế của chúng tôi.
+- **Bản Đồ**: Bản đồ tương tác hiển thị vị trí chính xác.
 
-## Course Catalog
+## Danh mục khoá học
 
-The course catalog page lists all the courses we offer, categorized for ease of navigation. Each course listing includes:
+Trang danh mục khóa học liệt kê tất cả các khóa học mà chúng tôi cung cấp, được phân loại để dễ dàng tìm kiếm.
 
-- **Course Title**: The name of the course.
-- **Description**: A brief description of what the course covers.
-- **Level**: The proficiency level required for the course (e.g., Beginner, Intermediate, Advanced).
-- **Duration**: The length of the course.
-- **Price**: The cost of enrolling in the course.
-- **Enroll Now**: A button/link to enroll in the course.
-
-We regularly update our course catalog to include the latest and most relevant courses for our students.
 
 ---
 
