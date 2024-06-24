@@ -61,7 +61,6 @@
 </div>
 <div class="mat goc" id=" trang mat goc">
     <div class="hero text-center">
-      
             <h1>HỌC TIẾNG ANH GIAO TIẾP</h1>
             <h2>CHO NGƯỜI MẤT GỐC</h2>
             <ul class="list-unstyled">
@@ -70,9 +69,7 @@
                 <li><span class="text-danger">&#10003;</span> Mô hình đào tạo tinh gọn, sĩ số 1-18 người</li>
             </ul>
             <a href="#dangky" class="btn btn-danger btn-lg btn-register">Đăng ký ngay</a>
-        
-        
-        </div>
+    </div>
     
     <div class="future-section">
         <h2>Bạn sẽ thế nào nếu học kém tiếng Anh?</h2>
@@ -254,6 +251,41 @@
     </div>
 </div>
 </div>
+
+<!-- Popup HTML -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <p>Đăng ký thành công!</p>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Lấy các phần tử cần thiết
+        var popup = document.getElementById("popup");
+        var closeBtn = document.querySelector(".popup .close");
+        var form = document.querySelector(".form-dangky");
+        var submitBtn = form.querySelector("button");
+    
+        // Hiển thị popup khi ấn nút đăng ký
+        submitBtn.addEventListener("click", function(event) {
+            event.preventDefault(); // Ngăn form gửi dữ liệu
+            popup.style.display = "block";
+        });
+    
+        // Đóng popup khi ấn vào nút đóng
+        closeBtn.addEventListener("click", function() {
+            popup.style.display = "none";
+        });
+    
+        // Đóng popup khi click ngoài khu vực popup
+        window.addEventListener("click", function(event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        });
+    });
+    </script>
 
 <footer class="bg-dark text-white py-5 mt-3">
     <div class="container">

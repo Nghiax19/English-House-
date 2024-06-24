@@ -16,19 +16,16 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-   
 }
 #nav li {
     position: relative;
     display: inline-block;
-   
 }
 #nav a {
     display: block;
     padding: 15px;
     color: white;
     text-decoration: none;
-   
 }
 #nav li a{
     text-decoration: none;
@@ -49,13 +46,10 @@ body {
     margin: 0;
     min-width: 200px;
    z-index: 1000;
-   
-   
 }
 .subnav li {
     display: block;
     width: 100%;  /*làm cho ielts và toeic mỗi cái 1 dòng*/
-   
 }
 .subnav a {
     display: block;
@@ -79,7 +73,7 @@ body {
 .subnav li>a{
     color: #333333 !important;
 }
-/* Đổi màu chữ khi hover vào các li con */
+/* Đổi màu chữ khi di chuột vào các li con */
 .subnav li:hover > a {
     color: rgb(14, 14, 14) !important;
     background-color: #FFBD59 !important;
@@ -89,9 +83,10 @@ a {
     transition: color 0.3s;
 }
 
+/*Module 1 quảng cáo khóa học*/
 .hero {
     background-color: #e0f7fa;
-    padding: 50px 0;
+    padding: 50px;
     position: relative;
     text-align: center;
 }
@@ -122,20 +117,8 @@ a {
     font-size: 1.5rem;
 }
 
-.hero-image {
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-    transform: translate(50%, 50%);
-}
-
-.hero-image img {
-    max-width: 400px;
-    height: auto;
-}
-
 .btn-register {
-    animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite; /*nút nhấp nháy*/
 }
 
 @keyframes pulse {
@@ -143,30 +126,31 @@ a {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     100% {
         transform: scale(1);
     }
 }
 
+/*4 Trọng tâm (nháp)*/
 .focus {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
 }
 
-.content {
+.focus-cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
 }
 
-.text {
+.focus-text {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 100px;
     background-image: url('background-pattern.png'); /* Giả định hình nền */
     background-size: contain;
     background-repeat: no-repeat;
@@ -174,7 +158,7 @@ a {
     text-align: center; /* Căn giữa văn bản */
 }
 
-.text h1 {
+.focus-item h {
     font-size: 2.5rem; /* Kích thước lớn hơn */
     color: #d32f2f; /* Màu đỏ đậm */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bóng đổ nhẹ */
@@ -185,30 +169,8 @@ a {
     padding-bottom: 10px; /* Khoảng cách giữa chữ và đường kẻ */
 }
 
-.icons {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.icon-box {
-    width: 48%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.icon-box img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.icon-box p {
-    margin: 0;
-}
-/* Phần mới thêm */
+/* Bạn sẽ thế nào nếu học kém tiếng Anh? */
 .future-section {
     background-color: #f9f9f9;
     padding: 40px;
@@ -225,7 +187,7 @@ a {
     padding-bottom: 10px;
 }
 
-.future-content {
+.future-content { /*dàn thành 4 ô*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -243,7 +205,7 @@ a {
 }
 
 .future-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 
 .future-item img {
@@ -264,6 +226,7 @@ a {
     color: #555;
 }
 
+/*Lý do chọn khóa học*/
 .reasons-section {
     background-color: #e0f7fa;
     padding: 60px 0;
@@ -297,8 +260,8 @@ a {
 }
 
 .reason-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
 .reason-icon img {
@@ -319,6 +282,7 @@ a {
     color: #555;
 }
 
+/* 4 trọng tâm (chính) */
 .focus-section {
     background-color: #ffffff;
     padding: 60px 0;
@@ -353,9 +317,8 @@ a {
 
 .focus-item:hover {
     background-color: yellow;
-    color: black;
+    color: red;
 }
-
 
 .focus-item h3 {
     font-size: 1.75rem;
@@ -378,7 +341,7 @@ a {
         opacity: 0;
     }
     to {
-        opacity: 1;
+        opacity: 10;
     }
 }
 
@@ -386,6 +349,7 @@ a {
     display: block;
 }
 
+/* Lộ trình 2 tháng */
 .lotrinh {
     max-width: 1200px;
     margin: 20px auto;
@@ -419,7 +383,7 @@ a {
     font-size: 24px;
     color: #d32f2f;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .subtitle {
@@ -438,20 +402,14 @@ a {
     padding: 0;
 }
 
-.item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.item::before {
+.content li {
     content: "\2713";
-    color: green !important;
+    color: black !important;
     margin-right: 8px;
     font-size: 16px;
 }
 
+/* Form đăng ký */
 .dangky {
     display: flex;
     justify-content: center;
@@ -461,10 +419,10 @@ a {
 }
 
 .hinhnen {
-    background: url('Image/class.png') no-repeat center center;
+    background: url('Image/class.png') no-repeat center;
     background-size: cover;
     filter: blur(8px);
-    -webkit-filter: blur(8px);
+    -webkit-filter: blur(8px); /*Làm mờ */
     height: 100%;
     width: 100%;
     position: absolute; /* Sử dụng absolute để nằm trong phần tử cha */
@@ -475,9 +433,9 @@ a {
 
 
 .form-dangky {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
